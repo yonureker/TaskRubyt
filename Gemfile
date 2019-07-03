@@ -52,6 +52,7 @@ group :development do
   gem 'pry-rails'
   gem 'bcrypt'
   gem 'jquery-rails'
+  gem 'faker'
 end
 
 group :test do
