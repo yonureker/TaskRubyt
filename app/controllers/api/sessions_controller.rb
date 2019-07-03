@@ -7,19 +7,21 @@ class Api::SessionsController < ApplicationController
 
     if @user
       login!(@user)
-      render :show
+      render "api/users/show"
     else
-      # https://www.bennadel.com/blog/2434-http-status-codes-for-invalid-data-400-vs-422.htm
-      render json: ['Incorrect email or password'], status: 422
+      render json: ['Incorrect email or password'], status: 401
     end
   end
 
   def destroy
+    @user = current_user
     if logged_in?
       logout
-      render json: {}
+      render "api/users/show"
     else
-      render json: {}, status: 404 #??
+      render json: ["Nobody signed in"], status: 404
     end
   end
 end
+
+
