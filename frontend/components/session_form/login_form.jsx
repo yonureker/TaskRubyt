@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SessionForm extends React.Component {
+class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = Object.assign({}, this.state);
     // this.props.processForm(user);
-    this.props.processForm(this.state).then(() => this.props.history.push('/'));
+    this.props.processForm(user).then(() => this.props.history.push('/'));
   }
 
   renderErrors() {
@@ -37,14 +37,15 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="login-form-container center-div">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to TaskRubyt!
+          {/* Welcome to TaskRubyt!
           <br/>
-          Please {this.props.formType} or {this.props.navLink}
+          Please {this.props.formType} or {this.props.navLink} */}
           <div className="login-form">
             <br/>
             <label>Email:
+              <br />
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
@@ -53,13 +54,14 @@ class SessionForm extends React.Component {
             </label>
             <br/>
             <label>Password:
+              <br />
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
               />
             </label>
-            
+            <br />
             <input className="session-submit" type="submit" value={this.props.formType} />
             {this.renderErrors()}
           </div>

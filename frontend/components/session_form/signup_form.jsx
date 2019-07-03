@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SessionForm extends React.Component {
+class SignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,52 +40,58 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to TaskRubyt!
+      <div className="signup-form-container center-div">
+        <form onSubmit={this.handleSubmit} className="signup-form-box">
+          {/* Welcome to TaskRubyt!
           <br/>
-          Please {this.props.formType} or {this.props.navLink}
-          <div className="login-form">
+          Please {this.props.formType} or {this.props.navLink} */}
+          <div className="signup-form">
             <br/>
             <label>Email:
+              < br/>
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
-                className="login-input"
+                className="signup-input"
               />
             </label>
             <br/>
             <label>Password:
+            < br/>
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
-                className="login-input"
+                className="signup-input"
               />
             </label>
             <br/>
             <label>First Name:
+              < br/>
               <input type="text"
                 value={this.state.first_name}
                 onChange={this.update('first_name')}
-                className="login-input"
+                className="signup-input"
               />
             </label>
             <br />
             <label>Last Name:
+                < br/>
               <input type="text"
                 value={this.state.last_name}
                 onChange={this.update('last_name')}
-                className="login-input"
+                className="signup-input"
               />
               </label>
               <br/>
               <label>Zip Code:
+                < br/>
               <input type="number"
                 value={this.state.zip_code}
                 onChange={this.update('zip_code')}
-                className="login-input"
+                className="signup-input"
               />
               </label>
+              <br />
             <input className="session-submit" type="submit" value={this.props.formType} />
             {this.renderErrors()}
           </div>
@@ -95,4 +101,4 @@ class SessionForm extends React.Component {
   }
 }
 
-export default SessionForm;
+export default SignupForm;

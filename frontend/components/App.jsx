@@ -13,7 +13,6 @@ import {
 const App = () => (
   <div>
     <header>
-    <h3>T-T-T-TaskRubyt</h3>
     <NavbarContainer />
     </header>
 

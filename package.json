@@ -26,7 +26,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch --mode=development"
+    "webpack": "webpack --watch --mode=development",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,9 @@
     "url": "https://github.com/yonureker/TaskRubyt/issues"
   },
   "homepage": "https://github.com/yonureker/TaskRubyt#readme",
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "12.5.0",
+    "npm": "6.9.0"
+  }
 }
