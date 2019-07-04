@@ -8,12 +8,21 @@ class LoginForm extends React.Component {
       password: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
     });
+  }
+
+  handleDemo(e) {
+    e.preventDefault();
+    this.setState(
+      { email: "yonureker@gmail.com", password: "12345678" },
+      () => this.handleSubmit(e)
+    )
   }
 
   handleSubmit(e) {
@@ -43,24 +52,20 @@ class LoginForm extends React.Component {
           <br/>
           Please {this.props.formType} or {this.props.navLink} */}
           <div className="login-form">
-            <br/>
-            <label>Email:
               <br />
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="login-input"
+                placeholder="Email"
               />
-            </label>
             <br/>
-            <label>Password:
-              <br />
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
+                placeholder="Password"
               />
-            </label>
             <br />
             <input className="session-submit" type="submit" value={this.props.formType} />
             {this.renderErrors()}

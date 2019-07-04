@@ -34,23 +34,55 @@
    color: #438e29;
    text-decoration: none;
    cursor: pointer;
+   font-weight:normal;
  }
 
  .center-div {
    margin: 0 auto;
-   width: 200px;
  }
  
- input {
-  display: inline-block;
-  text-align: start;
-  -webkit-appearance: textfield;
-  background-color: white;
-  -webkit-rtl-ordering: logical;
-  cursor: text;
-  margin: 0em;
-  font: 400 11px system-ui;
-  padding: 1px;
-  border-width: 2px;
-  border-radius: 2px;
- } 
+ .login-form-container, .signup-form-container {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -220px;
+  width: 450px;
+  padding: 20px;
+  background: #fff;
+  z-index: 3;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+input {
+  height: 40px;
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  /* padding: 10px; */
+  margin:0px 5px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  background-color: whitesmoke;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  display: block;
+  background-color: #51af33;
+  border: 1px solid #51af33;
+  width: 100%;
+  height:40px;
+  color: white;
+}
+
+input.signup-input{
+  padding:0px;
+}
+
+.signup-form {
+  padding:10px;
+}
+
+/* Form */
+
