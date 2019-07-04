@@ -37,52 +37,85 @@
    font-weight:normal;
  }
 
- .center-div {
-   margin: 0 auto;
- }
- 
- .login-form-container, .signup-form-container {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -220px;
-  width: 450px;
-  padding: 20px;
-  background: #fff;
-  z-index: 3;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-}
-
-input {
-  height: 40px;
-  display: block;
-  background: #fff;
-  border: 1px solid #ccc;
-  /* padding: 10px; */
-  margin:0px 5px;
-  width: 100%;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  background-color: whitesmoke;
-}
-
-input[type=button], input[type=submit], input[type=reset] {
-  display: block;
-  background-color: #51af33;
-  border: 1px solid #51af33;
-  width: 100%;
-  height:40px;
-  color: white;
-}
-
-input.signup-input{
-  padding:0px;
-}
-
-.signup-form {
-  padding:10px;
-}
 
 /* Form */
 
+.signup-form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  text-align: center;
+}
+.signup-form input {
+  outline: 0;
+  background:white;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-radius: 4px;
+  border:1px solid #b1b9c3;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #86919D;
+}
+.signup-form .session-submit {
+  outline: 0;
+  background: #51af33;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.signup-form .register-form {
+  display: none;
+}
+
+.signup-form-container {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
+  border-color: 1px solid grey;
+  background-image: 
+}
+.signup-form-container:before, .signup-form-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.signup-form-container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.signup-form-container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.signup-form-container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.signup-form-container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.signup-form-container .info span .fa {
+  color: #51af33;
+}
