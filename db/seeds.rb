@@ -8,7 +8,7 @@
 
 User.destroy_all
 
-100.times do
+10.times do
   User.create(
     email: Faker::Internet.email,
     password: 12345678,
@@ -21,4 +21,18 @@ User.destroy_all
     tasker_description: "hello",
   )
 end
+
+20.times do
+  Task.create(
+    user_id: Faker::Name.number(1),
+    tasker_id: Faker::Name.number(1),
+    catogory_id: Faker::Name.number(1),
+    description: Faker::Lorem.sentence(1, true),
+    location: "Los Angeles",
+    task_date: "2019-08-11",
+    task_start_time: "14:53",
+    completed: Faker::Boolean.boolean,
+    vehicle_required: Faker::Boolean.boolean,
+  )
+
 
