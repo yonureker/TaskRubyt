@@ -7,6 +7,7 @@ class Api::TasksController < ApplicationController
       render :show
     else
       render json: @task.error.full_messages, status: 402
+    end
   end
 
   def show
@@ -15,8 +16,9 @@ class Api::TasksController < ApplicationController
   end
 
   def index
-    @task = Task.all
+    @tasks = Task.all
     render :index
+  end
 
   def destroy
     @task = Task.find(params[:id])
@@ -25,6 +27,7 @@ class Api::TasksController < ApplicationController
       render :show
     else
       render json: @task.errors.full_messages, status: 402
+    end
   end
 
   private

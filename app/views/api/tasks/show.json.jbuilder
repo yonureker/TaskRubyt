@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-json.extract! task, :id,
+json.extract! @task, :id,
               :user_id,
               :tasker_id,
               :category_id,
