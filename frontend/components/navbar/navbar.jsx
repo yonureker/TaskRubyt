@@ -22,7 +22,9 @@ const NavBar = ({ currentUser, logout }) => {
 
       <div className="navigation-bar-right">
       <span><Link to="/account">Account</Link></span>
+      <Link to='/'>
       <button className="header-button" onClick={logout}>Log Out</button>
+      </Link>
       </div>
     </nav>
   );

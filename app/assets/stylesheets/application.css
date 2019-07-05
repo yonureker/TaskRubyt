@@ -211,3 +211,28 @@
   top: 1%;
   font-size:48px;
 }
+
+/* Account Page */
+
+.account-container-content {
+  width: 70%;
+  margin: 10% auto;
+  border: 1px solid #dce0e6;
+  display:flex;
+  max-width: 960px;
+}
+
+.account-container-content-left {
+  width: 30%;
+  border: 1px solid #dce0e6;
+}
+
+.account-container-content-right {
+  width: 70%;
+  border: 1px solid #dce0e6;
+}
+
+.account-container-content ul{
+  font-size: 20px;
+}
+
