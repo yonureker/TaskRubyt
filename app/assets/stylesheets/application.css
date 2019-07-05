@@ -110,6 +110,7 @@
   font-size: 14px;
   transition: all 0.3 ease;
   cursor: pointer;
+  margin-top:0px;
 }
 
 .signup-form .register-form {
@@ -129,7 +130,7 @@
   display: block;
   clear: both;
 }
-.signup-form-container .info {
+/* .signup-form-container .info {
   margin: 50px auto;
   text-align: center;
 }
@@ -150,7 +151,7 @@
 }
 .signup-form-container .info span .fa {
   color: #51af33;
-}
+} */
 
 
 /* NavBar - navigation bar */
@@ -159,23 +160,46 @@
   background: white;
   overflow: hidden;
   border-bottom: 1px solid #dce0e6;
+  /* display: flex; */
 }
 
 .navigation-bar-left{
   float:left;
   margin-left: 10%;
+  vertical-align: middle;
 }
 
 .navigation-bar-right{
   float:right;
   margin-right: 20%;
+  vertical-align: middle;
 }
 
 .navigation-bar a {
   float: left;
   color: green;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 16px;
   text-decoration: none;
   font-size: 15px;
+}
+
+
+/*Splash Hero - SplashHero */
+
+.splash-hero {
+  background-image: url("https://assets.taskrabbit.com/v3/assets/static/heros/homepage/hero-v3-9aac74fe52350b1e661d7a9e00e34529.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:500px;
+}
+
+.splash-hero-slogan {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }

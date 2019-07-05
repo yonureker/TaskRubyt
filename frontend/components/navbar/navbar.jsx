@@ -9,10 +9,8 @@ const NavBar = ({ currentUser, logout }) => {
      </div>
 
      <div className="navigation-bar-right">
-        <Link to="/login">Login</Link>
-        <button>
-        <Link to="/signup">Sign up!</Link>
-        </button>
+        <span><Link to="/login">Login</Link></span>
+        <span><Link to="/signup">Sign up!</Link></span>
      </div>
     </nav>
   );
@@ -23,7 +21,7 @@ const NavBar = ({ currentUser, logout }) => {
      </div>
 
       <div className="navigation-bar-right">
-      <h2 className="header-name">Hi, {currentUser.first_name}!</h2>
+      <span><Link to="/account">Account</Link></span>
       <button className="header-button" onClick={logout}>Log Out</button>
       </div>
     </nav>
