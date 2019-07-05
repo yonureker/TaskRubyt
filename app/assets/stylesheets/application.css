@@ -123,8 +123,8 @@
   max-width: 500px;
   margin: 0 auto;
   border-color: 1px solid grey;
-  background-image: 
 }
+
 .signup-form-container:before, .signup-form-container:after {
   content: "";
   display: block;
