@@ -4,7 +4,7 @@ import Account from './account';
 
 const mapStateToProps = ({ session, entities: { users } }) => {
   return {
-    currentUser: users[session.currentUserid]
+    currentUser: users[session.id] //this was currentUser: users[session.currentUser.id]
   };
 };
 
