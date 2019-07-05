@@ -3,53 +3,34 @@ import { Link } from 'react-router-dom';
 
 const NavBar = ({ currentUser, logout }) => {
   const showLinks = () => (
-    <nav className="login-signup">
-      <Link to="/login">Login</Link>
-      &nbsp;or&nbsp;
-      <Link to="/signup">Sign up!</Link>
+    <nav className="navigation-bar">
+      <div className="navigation-bar-left">
+        <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" height="64" width="100"/>
+     </div>
+
+     <div className="navigation-bar-right">
+        <Link to="/login">Login</Link>
+        <button>
+        <Link to="/signup">Sign up!</Link>
+        </button>
+     </div>
     </nav>
   );
-  const greetUser = () => (
-    <hgroup className="header-group">
+  const welcomeUser = () => (
+    <nav className="navigation-bar">
+      <div className="navigation-bar-left">
+        <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" height="64" width="100"/>
+     </div>
+
+      <div className="navigation-bar-right">
       <h2 className="header-name">Hi, {currentUser.first_name}!</h2>
       <button className="header-button" onClick={logout}>Log Out</button>
-    </hgroup>
+      </div>
+    </nav>
   );
 
-  return currentUser ? greetUser() : showLinks();
+  return currentUser ? welcomeUser() : showLinks();
 };
 
 
 export default NavBar;
-
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const NavBar = ({ currentUser, logout, history, match }) => {
-//   if (currentUser) {
-//     const onClick = (e) => {
-//       logout(currentUser)
-//         .then(() => history.push('/'));
-//     }
-
-//     return (
-//       <div className="nav-bar">
-//         <Link to="/dashboard"><img className="nav-bar-logo" src=""/></Link>
-//         <button className="logout-button" onClick={onClick}>Log Out</button>
-//       </div>
-//     )
-//   } else {
-//     return (
-//       <div className="nav-bar">
-//         <Link to="/"><img className="nav-bar-logo" src=""/></Link>
-//         <div className="session-buttons">
-//           <Link to="/login">Log In</Link>
-//           <Link to="/signup"><button>Sign Up</button></Link>
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-
-// export default NavBar;

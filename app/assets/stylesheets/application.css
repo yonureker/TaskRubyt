@@ -14,16 +14,14 @@
  *= require_self
  */
 
- /* html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section, input, select, textarea {
+ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section, input, select, textarea {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
+  font-size: 14px;
   vertical-align: baseline;
- } */
+  font-family: 'Ubuntu', sans-serif;
+ }
 
  header {
    display: flex;
@@ -37,36 +35,70 @@
    font-weight:normal;
  }
 
+.signup-page{
+  height: 1000px;
+  background-image: url("https://www.taskrabbit.com/v3/assets/web/hero_groceries-7e6a7a8ec2ce1365a8af7f27498594c6.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Form */
 
-.signup-form {
-  position: relative;
+.signup-form{
+  position: absolute;
   z-index: 1;
   background: #FFFFFF;
   max-width: 500px;
-  margin: 0 auto 100px;
+  margin: 30px auto 100px;
   padding: 30px;
   border-radius: 3px;
-  border: 1px solid grey;
+  border: 1px solid #dce0e6;
   text-align: center;
 }
-.signup-form input {
+.signup-form input{
   outline: 0;
   background:white;
   width: 100%;
   border: 0;
-  margin: 0 0 15px;
+  margin: 0 0 0px;
   padding: 15px;
   border-radius: 4px;
-  border:1px solid #b1b9c3;
+  border:1px solid #dce0e6;
   box-sizing: border-box;
   font-size: 14px;
   color: #86919D;
+  margin-top:10px;
 }
+
+.signup-form p{
+  margin-top:1px;
+  margin-left:5px;
+  color: red;
+  float:left;
+  font-size:12px;
+}
+
 .signup-form .session-submit {
   outline: 0;
   background: #51af33;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.signup-form .session-submit-demo {
+  outline: 0;
+  background: #4966a4;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -118,4 +150,32 @@
 }
 .signup-form-container .info span .fa {
   color: #51af33;
+}
+
+
+/* NavBar - navigation bar */
+
+.navigation-bar {
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid #dce0e6;
+}
+
+.navigation-bar-left{
+  float:left;
+  margin-left: 10%;
+}
+
+.navigation-bar-right{
+  float:right;
+  margin-right: 20%;
+}
+
+.navigation-bar a {
+  float: left;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
 }
