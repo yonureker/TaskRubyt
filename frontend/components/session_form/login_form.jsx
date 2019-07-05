@@ -58,7 +58,6 @@ class LoginForm extends React.Component {
                 className="signup-input"
                 placeholder="email"
               />
-              {this.handleErrors("Email")}
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
