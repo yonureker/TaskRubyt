@@ -39,6 +39,8 @@ class User < ApplicationRecord
            foreign_key: :tasker_id,
            class_name: :Task
 
+  has_one_attached :profile_photo
+
   attr_reader :password
 
   def self.find_by_credentials(email, password)

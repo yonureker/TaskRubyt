@@ -39,4 +39,5 @@ class Api::TasksController < ApplicationController
       :task_date,
       :task_start_time
     )
+  end
 end

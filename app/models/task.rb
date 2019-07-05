@@ -23,7 +23,7 @@ class Task < ApplicationRecord
             :description,
             :location,
             :task_date,
-            :task_start_time
+            :task_start_time, presence: true
 
   belongs_to :user,
              primary_key: :id,
@@ -33,7 +33,7 @@ class Task < ApplicationRecord
   belongs_to :tasker,
              primary_key: :id,
              foreign_key: :tasker_id,
-             class_name: :Task
+             class_name: :User
 
   has_one :category,
           primary_key: :id,

@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Task.destroy_all
 
-10.times do
+100.times do
   User.create(
     email: Faker::Internet.email,
     password: 12345678,
@@ -24,15 +25,22 @@ end
 
 20.times do
   Task.create(
-    user_id: Faker::Name.number(1),
-    tasker_id: Faker::Name.number(1),
-    catogory_id: Faker::Name.number(1),
-    description: Faker::Lorem.sentence(1, true),
+    user_id: Faker::Number.number(1),
+    tasker_id: Faker::Number.number(1),
+    category_id: Faker::Number.number(1),
+    description: Faker::Lorem.sentence(1),
     location: "Los Angeles",
     task_date: "2019-08-11",
-    task_start_time: "14:53",
+    task_start_time: "2020-01-01T08:00:00.000Z",
     completed: Faker::Boolean.boolean,
     vehicle_required: Faker::Boolean.boolean,
   )
+end
 
-
+User.create(
+  email: "yonureker@gmail.com",
+  password: "12345678",
+  first_name: "Onur",
+  last_name: "Eker",
+  zip_code: 94007,
+)
