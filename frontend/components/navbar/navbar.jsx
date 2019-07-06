@@ -21,10 +21,11 @@ const NavBar = ({ currentUser, logout }) => {
      </div>
 
       <div className="navigation-bar-right">
+      <span><Link to="/mytasks">My Tasks</Link></span>
       <span><Link to="/account">Account</Link></span>
-      <Link to='/'>
+      {/* <Link to='/'>
       <button className="header-button" onClick={logout}>Log Out</button>
-      </Link>
+      </Link> */}
       </div>
     </nav>
   );

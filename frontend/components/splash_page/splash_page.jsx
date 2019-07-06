@@ -15,7 +15,7 @@ class SplashPage extends React.Component {
     return (
       <div className="splash-page">
         <NavBarContainer />
-        <SplashHero/>
+        <SplashHero />
         {/* <SplashHero />
         <SplashBody />
         <Footer /> */}

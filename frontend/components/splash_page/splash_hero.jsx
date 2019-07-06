@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SplashPage extends React.Component {
+class SplashHero extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -9,13 +9,25 @@ class SplashPage extends React.Component {
   render() {
     return (
       <div className="splash-hero">
+        <div className="splash-hero-container">
         <div className="splash-hero-slogan">
-        <p>The convenient and affordable way
-to get things done around the home.</p>
+        <p>The convenient & affordable way to get things done around the home.</p>
+        </div>
+        <div className="splash-hero-sub-slogan">
+          <p>Choose from over 140,000 background checked Taskers for help without breaking the bank.</p>
+        </div>
+        <div class="splash-hero-cats">
+          <button>Mounting & Installation</button>
+          <button>Moving & Packing</button>
+          <button>Furniture Assembly</button>
+          <button>Home Improvement</button>
+          <button>General Handyman</button>
+          <button>Heavy Lifting</button>
+        </div>
         </div>
       </div>
     )
   }
 }
 
-export default SplashPage;
+export default SplashHero;
