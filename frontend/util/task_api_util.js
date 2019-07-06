@@ -1,7 +1,7 @@
 export const fetchAllTasks = () => (
   $.ajax({
     method: 'GET',
-    url: 'api/tasks'
+    url: 'api/tasks',
   })
 )
 
@@ -9,7 +9,6 @@ export const fetchTask = (id) => (
   $.ajax({
     method: 'GET',
     url: `api/tasks/${id}`,
-    data: { task }
   })
 )
 

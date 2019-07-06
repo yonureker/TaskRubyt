@@ -39,6 +39,14 @@ class User < ApplicationRecord
            foreign_key: :tasker_id,
            class_name: :Task
 
+  has_many :hired_taskers,
+           through: :booked_tasks,
+           source: :tasker
+
+  has_many :clients,
+           through: :hired_tasks,
+           source: :user
+           
   has_one_attached :profile_photo
 
   attr_reader :password
