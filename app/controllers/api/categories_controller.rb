@@ -8,4 +8,12 @@ class Api::CategoriesController < ApplicationController
     @categories = Category.all
     render :index
   end
+
+  private
+
+  def category_params
+    params.require(:category).permit(
+      :name
+    )
+  end
 end

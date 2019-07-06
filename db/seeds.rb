@@ -50,12 +50,10 @@ CATEGORIES = ['Yard Work',
               'Run Errands',
               'Plumbing'].freeze
 
-CATEGORIES.length.times do
-  i = 0
+CATEGORIES.each do |category|
   Category.create(
-    name: "#{CATEGORIES[i]}"
+    name: category.to_s
   )
-  i = i + 1
 end
 
 # DEMO USER
