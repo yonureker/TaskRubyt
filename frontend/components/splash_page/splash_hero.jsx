@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchBar from './search_bar';
 
 class SplashHero extends React.Component {
   constructor(props) {
@@ -23,6 +24,9 @@ class SplashHero extends React.Component {
           <button>Home Improvement</button>
           <button>General Handyman</button>
           <button>Heavy Lifting</button>
+        </div>
+        <div className="splash-hero-search">
+          <SearchBar />
         </div>
         </div>
       </div>

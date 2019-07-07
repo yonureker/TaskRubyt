@@ -301,5 +301,13 @@
   margin: auto;
 }
 
+/* Search Bar */
+
+.task-search-container{
+  height: 100px;
+  background-color: grey;
+  border-color: black;
+}
+
 
 
