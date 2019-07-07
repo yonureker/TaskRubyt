@@ -16,7 +16,7 @@ class SplashHero extends React.Component {
         <div className="splash-hero-sub-slogan">
           <p>Choose from over 140,000 background checked Taskers for help without breaking the bank.</p>
         </div>
-        <div class="splash-hero-cats">
+        <div className="splash-hero-cats">
           <button>Mounting & Installation</button>
           <button>Moving & Packing</button>
           <button>Furniture Assembly</button>
