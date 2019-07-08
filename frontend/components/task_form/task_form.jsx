@@ -1,4 +1,10 @@
 import React from 'react';
+import PlacesAutocomplete from 'react-places-autocomplete';
+import {
+  geocodeByAddress,
+  geocodeByPlaceId,
+  getLatLng,
+} from 'react-places-autocomplete';
 
 class TaskForm extends React.Component{
   constructor(props){
@@ -23,31 +29,69 @@ class TaskForm extends React.Component{
 
   handleSubmit(e) {
     e.preventDefault();
-    return this.props.createTask(this.state)
+    return this.props.createTask(this.props.state)
   }
 
   render() {
+
     return(
-    <div className="task-form-page">Hello</div>
+    <div className="task-form-page">
+      <div className="task-progress">
+        <div className="task-progress-container">
+          Task Progress will be displayed here
+        </div>
+        <div className="task-progress-sub-bar">
+          Filter and sort to find your Tasker. Then view their availability to request your date and time.
+        </div>
+      </div>
+      <div className="task-location form-card">
+        <div className="task-location-container">
+          <div className="task-location-title">
+            YOUR TASK LOCATION
+          </div>
+          <div className="task-location-search-bar-container">
+            <input type="text"/>
+          </div>
+          <div className="task-location-cta">
+            <button >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="task-location form-card">
+        <div className="task-location-container">
+          <div className="task-location-title">
+            TASK OPTIONS
+          </div>
+          <div className="task-location-search-bar-container">
+            <input type="text"/>
+          </div>
+          <div className="task-location-cta">
+            <button >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="task-location form-card">
+        <div className="task-location-container">
+          <div className="task-location-title">
+            TELL US THE DETAILS OF YOUR TASK
+          </div>
+          <div className="task-location-search-bar-container">
+            <input type="text"/>
+            <textarea></textarea>
+          </div>
+          <div className="task-location-cta">
+            <button >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     )
-    // const MyTaskDetailsForm = (props) => {
-    //   return (
-    //     <TaskDetailsForm
-    //       state={this.state}
-    //       location={this.state.location}
-    //       handleChange={this.handleChange}
-    //       createTask={this.props.createTask}
-    //       updateTask={this.props.updateTask}
-    //       errors={this.props.errors}
-    //       handleErrorInput={this.handleErrorInput}
-    //       removeErrors={this.props.removeErrors}
-    //       setState={this.setState.bind(this)}
-    //       reloadTask={this.reloadTask.bind(this)}
-    //       dispatchCurrentTask={this.props.dispatchCurrentTask}
-    //       {...props}
-    //     />
-    //   );
-    // }
   }
 }
 

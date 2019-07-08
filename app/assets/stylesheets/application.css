@@ -23,6 +23,10 @@
   font-family: 'Ubuntu', sans-serif;
  }
 
+ div {
+   display: block;
+ }
+
  button {
   padding: 10px 22px;
   border-radius: 5px;
@@ -308,6 +312,76 @@
   background-color: grey;
   border-color: black;
 }
+
+/* Task Progress Container */
+.task-progress-container {
+  min-height: 100px;
+  border-bottom: 1px solid #dce0e6;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.task-progress-sub-bar {
+  min-height: 66px;
+  border-bottom: 1px solid #dce0e6;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.task-form-page {
+  background: #f9fafb;
+}
+
+/* Task-Location-card */
+
+.form-card {
+  background: white;
+  border: 1px solid #dce0e6;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 925px;
+  margin: 20px auto;
+}
+
+.task-location-container {
+  margin: 20px;
+  color: #86919D;
+}
+
+.task-form-page button {
+  border: 1px solid #51af33;
+  color: white;
+  background-color: green;
+  padding: 12px 25px;
+  border-radius: 4px;
+}
+
+.task-location-title{
+  margin-bottom: 10px;
+}
+
+.task-location-search-bar-container {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 44px;
+}
+
+.task-location-search-bar-container input {
+  height: 46px;
+  width: 100%;
+  border: 1px solid #dce0e6;
+  box-sizing: border-box;
+  color: #86919D;
+  padding: 15px;
+}
+
+.task-location-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 
 
 
