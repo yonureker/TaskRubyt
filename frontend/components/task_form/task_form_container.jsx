@@ -13,6 +13,7 @@ const mapStateToProps = ({session, errors, entities: { users } }) => {
 }
 
 const mapDispatchToProps = dispatch => ({
+  //sending everything for now  
   createTask: task => dispatch(createTask(task)),
   updateTask: task => dispatch(updateTask(task)),
   fetchAllTasks: () => dispatch(fetchAllTasks()),
