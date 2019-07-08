@@ -33,21 +33,32 @@ export const createTask = task => dispatch => (
   ))
 );
 
+export const updateTask = task => dispatch => (
+  taskAPIUtil.updateTask(task)
+    .then(
+      task => dispatch(receiveTask(task)),
+      errors => dispatch(receiveTaskErrors(errors.responseJSON))
+    )
+)
+
 export const fetchAllTasks = () => dispatch => (
   taskAPIUtil.fetchAllTasks().then(tasks => (
-    dispatch(receiveAllTasks(tasks))
+    dispatch(receiveAllTasks(tasks)),
+    errors => dispatch(receiveTaskErrors(errors.responseJSON))
   )
   ));
 
 export const fetchTask = id => dispatch => (
   taskAPIUtil.fetchTask(id).then(task => (
-    dispatch(receiveTask(task))
+    dispatch(receiveTask(task)),
+    errors => dispatch(receiveTaskErrors(errors.responseJSON))
   )
   ));
 
 export const deleteTask = id => dispatch => (
   taskAPIUtil.deleteTask(id).then(task => (
-    dispatch(removeTask(task.id))
+    dispatch(removeTask(task.id)),
+    errors => dispatch(receiveTaskErrors(errors.responseJSON))
   )
   ));
 

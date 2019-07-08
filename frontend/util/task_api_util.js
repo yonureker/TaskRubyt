@@ -27,11 +27,10 @@ export const deleteTask = (id) => (
   })
 )
 
-// might implement later
-// export const updateTask = (task) => (
-//   $.ajax({
-//     method: 'PATCH',
-//     url: `api/tasks/${task.id}`,
-//     data: { task }
-//   })
-// )
+export const updateTask = (task) => (
+  $.ajax({
+    method: 'PATCH',
+    url: `api/tasks/${task.id}`,
+    data: { task }
+  })
+)
