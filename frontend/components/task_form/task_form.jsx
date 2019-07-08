@@ -19,7 +19,8 @@ class TaskForm extends React.Component{
       form_complete: false
     }
 
-    this.update = this.update.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
   update(field) {
@@ -34,7 +35,6 @@ class TaskForm extends React.Component{
   }
 
   render() {
-
     return(
     <div className="task-form-page">
       <div className="task-progress">
@@ -57,10 +57,17 @@ class TaskForm extends React.Component{
             YOUR TASK LOCATION
           </div>
           <div className="task-location-search-bar-container">
-              <SearchBar location={this.state.location} onChange={this.update("location")}/>
+              <input type="text"
+                value={this.state.location}
+                onChange={this.update('location')}
+                className="task-location-input"
+                placeholder="Enter location"
+              />
+              <input type="button" value=""/>
+              {/* <SearchBar location={this.state.location} onChange={this.update("location")}/> */}
           </div>
           <div className="task-location-cta">
-            <button >
+            <button>
               Save
             </button>
           </div>
