@@ -8,6 +8,7 @@ class SearchBar extends React.Component {
     this.autocompleteInput = React.createRef();
     this.autocomplete = null;
     this.handlePlaceChanged = this.handlePlaceChanged.bind(this);
+    this.update = this.update.bind(this);
   }
 
   componentDidMount() {
@@ -16,6 +17,12 @@ class SearchBar extends React.Component {
 
     this.autocomplete.addListener('place_changed', this.handlePlaceChanged);
   }
+
+  // update(field) {
+  //   return e => this.setState({
+  //     [field]: e.currentTarget.value
+  //   });
+  // }
 
   handlePlaceChanged(){
     const place = this.autocomplete.getPlace();
@@ -26,7 +33,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-        <input ref={this.autocompleteInput}  id="autocomplete" placeholder="Enter your address"
+        <input ref={this.autocompleteInput} onChange={this.update('location')} id="autocomplete" placeholder="Enter your address"
          type="text"></input>
     );
   }

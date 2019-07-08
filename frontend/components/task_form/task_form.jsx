@@ -84,7 +84,7 @@ class TaskForm extends React.Component{
                 placeholder="Location"
               />
               </form> */}
-              <SearchBar />
+              {/* <SearchBar location={this.state.location}/> */}
           </div>
           <div className="task-location-cta">
             <button >
