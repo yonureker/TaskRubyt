@@ -66,44 +66,6 @@ class TaskForm extends React.Component{
           </div>
         </div>
       </div>
-      <div className="task-location form-card">
-        <div className="task-location-container">
-          <div className="task-location-title">
-            TASK OPTIONS
-          </div>
-          <div className="task-location-search-bar-container">
-            <form>
-            <input type="radio" name="" id=""/>Not required for this task
-            <br></br>
-            <input type="radio" name="" id=""/>Vehicle required
-            </form>
-          </div>
-          <div className="task-location-cta">
-            <button >
-              Save
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="task-location form-card">
-        <div className="task-location-container">
-          <div className="task-location-title">
-            TELL US THE DETAILS OF YOUR TASK
-          </div>
-          <div className="task-location-search-bar-container">
-            <input type="text"/>
-            <textarea></textarea>
-          </div>
-          <div className="task-location-cta">
-            <button >
-              Save
-            </button>
-          </div>
-        </div>
-      </div>
-      <div>
-        
-      </div>
     </div>
     )
   }
