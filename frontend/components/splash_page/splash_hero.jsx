@@ -2,11 +2,11 @@ import React from 'react';
 import SearchBar from './search_bar';
 import { Link } from 'react-router-dom';
 
+
 class SplashHero extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
-
 
   render() {
     return (
@@ -21,12 +21,12 @@ class SplashHero extends React.Component {
           </div>
 
           <div className="splash-hero-cats">
-            <Link to='/tasks'><button>Mounting & Installation</button></Link>
-            <Link to='/tasks'><button>Moving & Packing</button></Link>
-            <Link to='/tasks'><button>Furniture Assembly</button></Link>
-            <Link to='/tasks'><button>Home Improvement</button></Link>
-            <Link to='/tasks'><button>General Handyman</button></Link>
-            <Link to='/tasks'><button>Heavy Lifting</button></Link>
+            <button>Mounting & Installation</button>
+            <button>Moving & Packing</button>
+            <button>Furniture Assembly</button>
+            <button>Home Improvement</button>
+            <button>General Handyman</button>
+            <button>Heavy Lifting</button>
           </div>
         </div>
       </div>

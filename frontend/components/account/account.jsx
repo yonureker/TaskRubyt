@@ -31,7 +31,7 @@ class Account extends React.Component {
           <div className="account-container-content-right">
             <ul>
               <li className="name">{this.props.currentUser.first_name}{' '}{this.props.currentUser.last_name}</li>
-              <li clasName="email">{this.props.currentUser.email}</li>
+              <li className="email">{this.props.currentUser.email}</li>
               <li className="zip-code">{this.props.currentUser.zip_code}</li>
               <Link to='/'>
               <button className="header-button" onClick={this.props.logout}>Log Out</button>

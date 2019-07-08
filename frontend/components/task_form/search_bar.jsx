@@ -18,11 +18,11 @@ class SearchBar extends React.Component {
     this.autocomplete.addListener('place_changed', this.handlePlaceChanged);
   }
 
-  // update(field) {
-  //   return e => this.setState({
-  //     [field]: e.currentTarget.value
-  //   });
-  // }
+  update(field) {
+    return e => this.setState({
+      [field]: e.currentTarget.value
+    });
+  }
 
   handlePlaceChanged(){
     const place = this.autocomplete.getPlace();

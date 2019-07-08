@@ -29,7 +29,6 @@ export const removeTask = (id) => ({
 export const createTask = task => dispatch => (
   taskAPIUtil.createTask(task).then(task => (
     dispatch(receiveTask(task))
-  ), errors => (dispatch(receiveTaskErrors(errors.responseJSON))
   ))
 );
 

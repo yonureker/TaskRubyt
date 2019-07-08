@@ -5,7 +5,7 @@ import { fetchAllUsers, fetchUser } from '../../actions/user_actions';
 import { fetchAllCategories, fetchCategory } from '../../actions/category_actions'
 import { removeErrors } from '../../actions/session_actions';
 
-const mapStateToProps = ({session, errors, entities: { users } }) => {
+const mapStateToProps = ({session, errors, entities: { users, categories, tasks } }) => {
   return {
     currentUser: users[session.id],
     errors: errors.task

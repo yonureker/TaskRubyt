@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBarContainer from '../navbar/navbar_container';
-import SplashHero from './splash_hero';
+import SplashHeroContainer from './splash_hero_container';
 import SearchBar from './search_bar';
 import LoginFormContainer from '../session_form/login_form_container.jsx';
 import SignupFormContainer from '../session_form/signup_form_container';
@@ -16,10 +16,7 @@ class SplashPage extends React.Component {
     return (
       <div className="splash-page">
         <NavBarContainer />
-        <SplashHero />
-        {/* <SplashHero />
-        <SplashBody />
-        <Footer /> */}
+        <SplashHeroContainer />
       </div>
     )
   }

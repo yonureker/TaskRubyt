@@ -19,7 +19,7 @@ class TaskForm extends React.Component{
       form_complete: false
     }
 
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
   }
 
   update(field) {
@@ -30,29 +30,10 @@ class TaskForm extends React.Component{
 
   handleSubmit(e) {
     e.preventDefault();
-    return this.props.createTask(this.state)
+    this.props.createTask(this.state).then(() => this.props.history.push('/mytasks'));
   }
 
   render() {
-
-    // const TaskDetailsForm = (props) => {
-    //   return (
-    //     <TaskDetailsForm
-    //       state={this.state}
-    //       location={this.state.location}
-    //       handleChange={this.handleChange}
-    //       createTask={this.props.createTask}
-    //       updateTask={this.props.updateTask}
-    //       errors={this.props.errors}
-    //       handleErrorInput={this.handleErrorInput}
-    //       removeErrors={this.props.removeErrors}
-    //       setState={this.setState.bind(this)}
-    //       reloadTask={this.reloadTask.bind(this)}
-    //       dispatchCurrentTask={this.props.dispatchCurrentTask}
-    //       {...props}
-    //     />
-    //   );
-    // }
 
     return(
     <div className="task-form-page">
@@ -76,15 +57,7 @@ class TaskForm extends React.Component{
             YOUR TASK LOCATION
           </div>
           <div className="task-location-search-bar-container">
-            {/* <form onSubmit={this.handleSubmit}>
-          <input type="text"
-                value={this.state.location}
-                onChange={this.update('location')}
-                className="signup-input"
-                placeholder="Location"
-              />
-              </form> */}
-              {/* <SearchBar location={this.state.location}/> */}
+              <SearchBar location={this.state.location} onChange={this.update("location")}/>
           </div>
           <div className="task-location-cta">
             <button >
@@ -99,7 +72,11 @@ class TaskForm extends React.Component{
             TASK OPTIONS
           </div>
           <div className="task-location-search-bar-container">
-            <input type="text"/>
+            <form>
+            <input type="radio" name="" id=""/>Not required for this task
+            <br></br>
+            <input type="radio" name="" id=""/>Vehicle required
+            </form>
           </div>
           <div className="task-location-cta">
             <button >
