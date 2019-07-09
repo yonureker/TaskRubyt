@@ -14,42 +14,42 @@ User.destroy_all
 Task.destroy_all
 Category.destroy_all
 
-# 50.times do
-#   User.create(
-#     email: Faker::Internet.email,
-#     password: 12_345_678,
-#     first_name: Faker::Name.first_name,
-#     last_name: Faker::Name.last_name,
-#     zip_code: Faker::Address.zip_code,
-#     is_tasker: Faker::Boolean.boolean,
-#     hourly_rate: Faker::Number.number(2),
-#     has_vehicle: Faker::Boolean.boolean,
-#     tasker_description: 'hello'
-#   )
-# end
+50.times do
+  User.create(
+    email: Faker::Internet.email,
+    password: 12_345_678,
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
+    zip_code: Faker::Address.zip_code,
+    is_tasker: Faker::Boolean.boolean,
+    hourly_rate: Faker::Number.number(2),
+    has_vehicle: Faker::Boolean.boolean,
+    tasker_description: 'hello'
+  )
+end
 
-# 20.times do
-#   Task.create(
-#     user_id: Faker::Number.number(1),
-#     tasker_id: Faker::Number.number(1),
-#     category_id: Faker::Number.number(1),
-#     description: Faker::Lorem.sentence(1),
-#     location: 'Los Angeles',
-#     task_date: '2019-08-11',
-#     task_start_time: '2020-01-01T08:00:00.000Z',
-#     completed: Faker::Boolean.boolean,
-#     vehicle_required: Faker::Boolean.boolean
-#   )
-# end
+20.times do
+  Task.create(
+    user_id: Faker::Number.number(1),
+    tasker_id: Faker::Number.number(1),
+    category_id: Faker::Number.number(1),
+    description: Faker::Lorem.sentence(1),
+    location: 'Los Angeles',
+    task_date: '2019-08-11',
+    task_start_time: '2020-01-01T08:00:00.000Z',
+    completed: Faker::Boolean.boolean,
+    vehicle_required: Faker::Boolean.boolean
+  )
+end
 
-CATEGORIES = ['Yard Work',
-              'Home Repairs',
-              'Cleaning',
+CATEGORIES = ['Mounting & Instalation',
+              'Moving & Packing',
               'Furniture Assembly',
-              'Mounting',
-              'Help Moving',
+              'Home Improvement',
+              'General Handyman',
+              'Heavy Lifting',
               'Painting',
-              'Pet Sitting',
+              'Cleaning',
               'Run Errands',
               'Plumbing'].freeze
 

@@ -9,8 +9,8 @@ const NavBar = ({ currentUser, logout }) => {
      </div>
 
      <div className="navigation-bar-right">
-        <span><Link to="/login">Login</Link></span>
-        <span><Link to="/signup">Sign up!</Link></span>
+        <span><Link to="/login">Log In</Link></span>
+        <span><Link to="/signup">Sign Up</Link></span>
      </div>
     </nav>
   );

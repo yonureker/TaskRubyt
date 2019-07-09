@@ -1,5 +1,4 @@
 import * as taskAPIUtil from '../util/task_api_util';
-import * as userAPIUtil from '../util/user_api_util';
 
 export const RECEIVE_TASK = 'RECEIVE_TASK';
 export const RECEIVE_ALL_TASKS = 'RECEIVE_ALL_TASKS';

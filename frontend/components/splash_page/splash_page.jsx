@@ -1,10 +1,6 @@
 import React from 'react';
 import NavBarContainer from '../navbar/navbar_container';
-import SplashHeroContainer from './splash_hero_container';
-import SearchBar from './search_bar';
-import LoginFormContainer from '../session_form/login_form_container.jsx';
-import SignupFormContainer from '../session_form/signup_form_container';
-import { Route, Redirect, Switch, HashRouter } from 'react-router-dom';
+import SplashHero from './splash_hero';
 
 class SplashPage extends React.Component {
   constructor(props) {
@@ -16,7 +12,7 @@ class SplashPage extends React.Component {
     return (
       <div className="splash-page">
         <NavBarContainer />
-        <SplashHeroContainer />
+        <SplashHero />
       </div>
     )
   }

@@ -17,13 +17,14 @@
 #
 
 class Task < ApplicationRecord
-  validates :user_id,
-            :tasker_id,
-            :category_id,
-            :description,
-            :location,
-            :task_date,
-            :task_start_time, presence: true
+  # removed validations to be able to create task after the first sub-form submit.
+  # validates :user_id,
+  #           :tasker_id,
+  #           :category_id,
+  #           :description,
+  #           :location,
+  #           :task_date,
+  #           :task_start_time, presence: true
 
   belongs_to :user,
              primary_key: :id,

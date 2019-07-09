@@ -55,6 +55,10 @@
   background-size: cover;
 }
 
+body {
+  background: #f9fafb;
+}
+
 /* Form */
 
 .signup-form{
@@ -68,7 +72,7 @@
   border: 1px solid #dce0e6;
   text-align: center;
 }
-.signup-form input{
+.signup-form input[type="text"], input[type="number"], input[type="password"], input[type="date"]{
   outline: 0;
   background:white;
   width: 100%;
@@ -105,6 +109,7 @@
   font-size: 14px;
   transition: all 0.3 ease;
   cursor: pointer;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -135,6 +140,7 @@
   max-width: 500px;
   margin: 0 auto;
   border-color: 1px solid grey;
+
 }
 
 .signup-form-container:before, .signup-form-container:after {
@@ -326,6 +332,7 @@
   border-bottom: 1px solid #dce0e6;
   text-align: center;
   vertical-align: middle;
+  background-color: #e8ebef;
 }
 
 .task-form-page {
@@ -334,54 +341,18 @@
 
 /* Task-Location-card */
 
-.form-card {
-  background: white;
-  border: 1px solid #dce0e6;
-  border-radius: 4px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 925px;
-  margin: 20px auto;
+.task-scorecard-container {
+  width: 900px;
+  border: 1px solid black;
+  margin: 0 auto;
 }
 
-.task-location-container {
-  margin: 20px;
-  color: #86919D;
+.scorecard {
+  width: 90%;
+  height:200px;
+  border: 1px solid green;
+  margin: 0 auto;
 }
-
-.task-form-page button {
-  border: 1px solid #51af33;
-  color: white;
-  background-color: green;
-  padding: 12px 25px;
-  border-radius: 4px;
-}
-
-.task-location-title{
-  margin-bottom: 10px;
-}
-
-.task-location-search-bar-container {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  height: 44px;
-}
-
-.task-location-search-bar-container input {
-  height: 46px;
-  width: 100%;
-  border: 1px solid #dce0e6;
-  box-sizing: border-box;
-  color: #86919D;
-  padding: 15px;
-}
-
-.task-location-cta {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
 
 
 
