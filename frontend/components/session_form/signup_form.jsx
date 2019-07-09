@@ -47,39 +47,39 @@ class SignupForm extends React.Component {
             <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" width="200" height="124" />
             </div>
             <br/>
+            <label>Email Address</label>
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="signup-input"
-                placeholder="Email"
               />
               {this.handleErrors("Email")}
+              <label>Password</label>
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="signup-input"
-                placeholder="Password"
               />
               {this.handleErrors("Password")}
+              <label>First Name</label>
               <input type="text"
                 value={this.state.first_name}
                 onChange={this.update('first_name')}
                 className="signup-input"
-                placeholder="First Name"
               />
               {this.handleErrors("First")}
+              <label>Last Name</label>
               <input type="text"
                 value={this.state.last_name}
                 onChange={this.update('last_name')}
                 className="signup-input"
-                placeholder="Last Name"
               />
               {this.handleErrors("Last")}
+              <label>Zip Code</label>
               <input type="number"
                 value={this.state.zip_code}
                 onChange={this.update('zip_code')}
                 className="signup-input"
-                placeholder="Zip Code"
               />
               {this.handleErrors("Zip")}
             <input className="session-submit" type="submit" value="Create Account" />

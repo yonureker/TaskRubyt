@@ -52,21 +52,21 @@ class LoginForm extends React.Component {
             <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" width="200" height="124" />
           </div>
               <br />
+              <label>Email Address</label>
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="signup-input"
-                placeholder="email"
               />
+              <label>Password</label>
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="signup-input"
-                placeholder="password"
               />
               {this.handleErrors("Password")}
             <input className="session-submit" type="submit" value="Log In" />
-            <input className="session-submit-demo" onClick={this.demoLogin} type="submit" value="Demo Login" />
+            <input className="session-submit-demo" onClick={this.demoLogin} type="submit" value="Demo Log In" />
           </div>
         </form>
       </div>

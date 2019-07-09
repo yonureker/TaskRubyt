@@ -47,6 +47,12 @@
    font-weight:normal;
  }
 
+ textarea {
+   width: 100%;
+   resize: none;
+   border: 1px solid #dce0e6;
+ }
+
 .signup-page{
   height: 1000px;
   background-image: url("https://www.taskrabbit.com/v3/assets/web/hero_groceries-7e6a7a8ec2ce1365a8af7f27498594c6.jpg");
@@ -84,15 +90,21 @@
   box-sizing: border-box;
   font-size: 14px;
   color: #86919D;
-  margin-top:10px;
+  margin-bottom:20px;
 }
 
 .signup-form p{
   margin-top:1px;
   margin-left:5px;
-  color: red;
+  color: #438e29;
   float:left;
   font-size:12px;
+}
+
+.signup-form label{
+  color: #86919D;
+  float:left;
+  margin-bottom:10px;
 }
 
 .signup-form .session-submit {
@@ -109,13 +121,17 @@
   font-size: 14px;
   transition: all 0.3 ease;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.signup-form .session-submit:hover {
+  background: #275319;
 }
 
 .signup-form .session-submit-demo {
   outline: 0;
-  background: #4966a4;
+  background: #427fc5;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -128,6 +144,10 @@
   transition: all 0.3 ease;
   cursor: pointer;
   margin-top:0px;
+}
+
+.signup-form .session-submit-demo:hover {
+  background: #284e79;
 }
 
 .signup-form .register-form {
@@ -343,22 +363,21 @@
 
 .task-scorecard-container {
   width: 900px;
-  border: 1px solid black;
   margin: 0 auto;
 }
 
 .scorecard {
   width: 90%;
-  height:200px;
-  border: 1px solid green;
-  margin: 0 auto;
+  border: 1px solid #dce0e6;
+  margin: 25px auto;
   padding: 15px 0px;
 }
 
 .scorecard-content{
-  padding:20px;
-  width: 100%;
-  height:100%;
+  margin: 0 auto;
+  width: 90%;
+  /* width: 100%;
+  height:100%; */
 }
 
 .scorecard-title{
@@ -366,8 +385,7 @@
 }
 
 .scorecard-form{
-  width:100%;
-  border: 1px solid red; 
+  /* width:100%; */
 }
 
 .scorecard-form input[type="text"]{
@@ -390,8 +408,28 @@
 }
 
 .scorecard-form li{
-  font-size:20px;
+  font-size:17px;
 }
+
+.location{
+  width:100%;
+}
+
+.task-form button{
+  color: white;
+  border: 1px solid #51af33;
+  background-color: #51af33;
+}
+
+.continue {
+  display:flex;
+  justify-content: center;
+}
+
+
+
+
+
 
 
 

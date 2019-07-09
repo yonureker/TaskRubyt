@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "./search_bar";
+import NavBarContainer from '../navbar/navbar_container'
 
 class TaskForm extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class TaskForm extends React.Component {
 
     return (
       <div className="task-form">
+        <NavBarContainer />
         <div className="task-details">
           <div className="task-scorecard-container">
             <div className="task-scorecard-location scorecard">
@@ -48,16 +50,18 @@ class TaskForm extends React.Component {
                 <span>YOUR TASK LOCATION</span>
               </div>
               <div className="scorecard-form">
-                <form>
+                <form className="location">
                   <input
                     type="text"
                     value={this.state.location}
                     onChange={this.update("location")}
-                    className="signup-form"
+                    className=""
                     placeholder="Location"
                   />
                   <br />
+                  <div className="continue">
                   <button>Save</button>
+                  </div>
                 </form>
                 </div>
               </div>
@@ -84,7 +88,9 @@ class TaskForm extends React.Component {
                   </ul>
 
                   <br />
+                  <div className="continue">
                   <button>Save</button>
+                  </div>
                 </form>
               </div>
               </div>
@@ -111,7 +117,9 @@ class TaskForm extends React.Component {
                     onChange={this.update('description')}
                   />
                   <br />
+                  <div className="continue">
                   <button onClick={this.handleSubmit}>See Taskers & Prices</button>
+                  </div>
                 </form>
               </div>
               </div>
