@@ -1,14 +1,14 @@
 import * as userAPIUtil from '../util/user_api_util';
-export const RECEIVE_ALL_USERS = 'RECEIVE_ALL_USERS';
-export const RECEIVE_USER = "RECEIVE_USER";
+export const RECEIVE_ALL_TASKERS = 'RECEIVE_ALL_TASKERS';
+export const RECEIVE_TASKER = "RECEIVE_TASKER";
 
 export const receiveAllUsers = users => ({
-  type: RECEIVE_ALL_USERS,
+  type: RECEIVE_ALL_TASKERS,
   users
 })
 
 export const receiveUser = user => ({
-  type: RECEIVE_USER,
+  type: RECEIVE_TASKER,
   user
 })
 

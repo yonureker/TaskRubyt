@@ -1,19 +1,21 @@
 import {connect} from 'react-redux';
 import TaskForm from './task_form';
-import { fetchTask, createTask, updateTask, fetchAllTasks, deleteTask } from '../../actions/task_actions';
+import { saveTask, fetchTask, createTask, updateTask, fetchAllTasks, deleteTask } from '../../actions/task_actions';
 import { fetchAllUsers, fetchUser } from '../../actions/user_actions';  
 import { fetchAllCategories, fetchCategory } from '../../actions/category_actions'
 import { removeErrors } from '../../actions/session_actions';
 
-const mapStateToProps = ({session, errors, entities: { users, categories, tasks } }) => {
+const mapStateToProps = (state) => {
   return {
-    currentUser: users[session.id],
-    errors: errors.task
+    currentUser: state.entities.users[state.session.id],
+    currentTask: state.currentTask,
+    errors: state.errors.task
   }
 }
 
 const mapDispatchToProps = dispatch => ({
   //sending everything for now  
+  saveTask: task => dispatch(saveTask(task)),
   createTask: task => dispatch(createTask(task)),
   updateTask: task => dispatch(updateTask(task)),
   fetchAllTasks: () => dispatch(fetchAllTasks()),

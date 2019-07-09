@@ -19,7 +19,7 @@ class Api::UsersController < ApplicationController
   end
 
   def index
-    @users = User.all
+    @users = User.all.where(is_tasker: true)
     render :index
   end
 

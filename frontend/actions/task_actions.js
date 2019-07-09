@@ -3,7 +3,8 @@ import * as taskAPIUtil from '../util/task_api_util';
 export const RECEIVE_TASK = 'RECEIVE_TASK';
 export const RECEIVE_ALL_TASKS = 'RECEIVE_ALL_TASKS';
 export const RECEIVE_TASK_ERRORS = 'RECEIVE_TASK_ERRORS';
-export const REMOVE_TASK = 'REMOVE_TASK'
+export const REMOVE_TASK = 'REMOVE_TASK';
+export const SAVE_TASK = 'SAVE_TASK';
 
 export const receiveTask = (task) => ({
   type: RECEIVE_TASK,
@@ -30,6 +31,11 @@ export const createTask = task => dispatch => (
     dispatch(receiveTask(task))
   ))
 );
+
+export const saveTask = (task) => ({
+  type: SAVE_TASK,
+  task
+})
 
 export const updateTask = task => dispatch => (
   taskAPIUtil.updateTask(task)

@@ -55,9 +55,9 @@
   background-size: cover;
 }
 
-body {
+/* body {
   background: #f9fafb;
-}
+} */
 
 /* Form */
 
@@ -335,9 +335,9 @@ body {
   background-color: #e8ebef;
 }
 
-.task-form-page {
+/* .task-form-page {
   background: #f9fafb;
-}
+} */
 
 /* Task-Location-card */
 
@@ -352,6 +352,45 @@ body {
   height:200px;
   border: 1px solid green;
   margin: 0 auto;
+  padding: 15px 0px;
+}
+
+.scorecard-content{
+  padding:20px;
+  width: 100%;
+  height:100%;
+}
+
+.scorecard-title{
+  margin-bottom: 20px;
+}
+
+.scorecard-form{
+  width:100%;
+  border: 1px solid red; 
+}
+
+.scorecard-form input[type="text"]{
+  outline: 0;
+  background:white;
+  width: 100%;
+  border: 0;
+  margin: 0 0 0px;
+  padding: 15px;
+  border-radius: 4px;
+  border:1px solid #dce0e6;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #86919D;
+  margin-top:10px;
+}
+
+.scorecard-form ul{
+  list-style: none;
+}
+
+.scorecard-form li{
+  font-size:20px;
 }
 
 

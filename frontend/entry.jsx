@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
+import { fetchAllUsers } from './actions/user_actions'
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -21,7 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   //TESTING PURPOSES
   window.getState = store.getState;
   window.dispatch = store.dispatch;
+  window.fetchAllUsers = fetchAllUsers;
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store} /> , root);
 });
+
