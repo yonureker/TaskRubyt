@@ -28,8 +28,6 @@ gem 'jquery-rails'
 gem 'aws-sdk-s3'
 gem 'faker'
 gem 'bcrypt'
-gem 'react-datepicker'
-gem 'moment'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

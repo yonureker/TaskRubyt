@@ -14,7 +14,7 @@ User.destroy_all
 Task.destroy_all
 Category.destroy_all
 
-50.times do
+10.times do
   User.create(
     email: Faker::Internet.email,
     password: 12_345_678,
@@ -25,20 +25,6 @@ Category.destroy_all
     hourly_rate: Faker::Number.number(2),
     has_vehicle: Faker::Boolean.boolean,
     tasker_description: 'I utilize my Toyota Sienna Van with no back seats to move all Couches, Mattress/Frames, Desks, Dressers, Mirrors, Rugs, and other Heavy and Odd Shaped Items. Van has Roof Rack and I have 2 Dollies, Tie-Down Ratchet Straps, Moving blankets, + Tools!'
-  )
-end
-
-20.times do
-  Task.create(
-    user_id: Faker::Number.number(1),
-    tasker_id: Faker::Number.number(1),
-    category_id: Faker::Number.number(1),
-    description: Faker::Lorem.sentence(1),
-    location: 'Los Angeles',
-    task_date: '2019-08-11',
-    task_start_time: '2020-01-01T08:00:00.000Z',
-    completed: Faker::Boolean.boolean,
-    vehicle_required: Faker::Boolean.boolean
   )
 end
 

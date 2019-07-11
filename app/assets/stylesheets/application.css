@@ -546,6 +546,58 @@
 
 
 
+/* Task Details Container */
+
+.task-details-container {
+  border:1px solid #dce0e6;
+  max-width: 400px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.task-details-top {
+  height: 10%;
+  border-bottom:1px solid #dce0e6;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.task-details-middle {
+  height: 40%;
+  border-bottom:1px solid #dce0e6;
+  padding: 20px;
+}
+
+.task-details-middle li{
+  list-style: none;
+}
+
+.task-details-bottom {
+  height: 50%;
+  padding: 20px;
+}
+
+.tasker-name-details {
+  width: 80%;
+}
+
+.tasker-photo {
+  width: 20%;
+}
+
+.tasker-photo-detail{
+  border-radius: 100%;
+  width: 100%
+}
+
+
+
+
+
+
+
 
 
 

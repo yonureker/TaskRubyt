@@ -16,7 +16,7 @@ class Api::TasksController < ApplicationController
   end
 
   def index
-    @tasks = Task.all
+    @tasks = Task.all.where(user_id: current_user.id)
     render :index
   end
 

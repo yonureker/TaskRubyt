@@ -6,9 +6,10 @@ import AccountContainer from './account/account_container';
 import TaskFormContainer from './task_form/task_form_container';
 import PickTaskerContainer from './task_form/pick_tasker_container';
 import ConfirmTaskContainer from './task_form/confirm_task_container';
+import TaskIndexContainer from './task_form/task_index_container';
 import SplashPage from './splash_page/splash_page.jsx';
 import { Route, Switch } from 'react-router-dom';
-import { AuthRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div className="page-content">
@@ -20,6 +21,7 @@ const App = () => (
       <Route exact path="/pick-tasker" component={PickTaskerContainer} />
       <Route exact path="/account" component={AccountContainer} />
       <Route exact path='/confirm-task' component={ConfirmTaskContainer} />
+      <Route exact path='/mytasks' component={TaskIndexContainer} />
     </Switch>
   </div>
 );
