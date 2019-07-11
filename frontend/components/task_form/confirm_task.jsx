@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import merge from 'lodash/merge';
-import NavBar from '../navbar/navbar';
+import NavBarContainer from '../navbar/navbar_container';
 
 class ConfirmTask extends React.Component {
   constructor(props) {
@@ -47,6 +46,7 @@ class ConfirmTask extends React.Component {
     
     return (
       <div className="confirm-task-page">
+        <NavBarContainer />
         <div className="task-details-container">
           {/* <div className="name field">
             <div className="task-icon">

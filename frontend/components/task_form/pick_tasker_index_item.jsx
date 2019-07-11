@@ -33,9 +33,9 @@ const TaskerIndexItem = ({ tasker }) => {
       </div>
     </div>
     <div className="stars">
-      39 {tasker.task_category} Tasks
+      X {tasker.task_category} Tasks
       <br/>
-      100% Positive
+      X% Positive
     </div>
     </div>
     <div className="tasker-description-container">

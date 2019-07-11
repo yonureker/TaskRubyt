@@ -1,5 +1,6 @@
 import React from 'react';
 import  TaskIndexItem  from './task_index_item';
+import NavBarContainer from '../navbar/navbar_container';
 
 class TaskIndex extends React.Component {
   componentDidMount() {
@@ -18,6 +19,7 @@ class TaskIndex extends React.Component {
     });
      return (
        <div className="fullTaskerPage">
+         <NavBarContainer />
            <div className="security">
               <img className="secimage" src={window.security}   />
              <div className="trust"> Trust & Safety Guarantee : </div>

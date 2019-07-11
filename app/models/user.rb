@@ -46,8 +46,8 @@ class User < ApplicationRecord
   has_many :clients,
            through: :hired_tasks,
            source: :user
-           
-  has_one_attached :profile_photo
+
+  has_one_attached :photo
 
   attr_reader :password
 

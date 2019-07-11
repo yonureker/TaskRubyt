@@ -11,10 +11,8 @@ class TaskIndexItem extends React.Component {
 
 render() {
   return (
-
-
+   
     <div className="taskitem">
-
 
      <div className="field">
       Tasker

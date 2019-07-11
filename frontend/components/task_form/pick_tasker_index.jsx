@@ -1,6 +1,6 @@
 import React from "react";
 import TaskerIndexItem from "./pick_tasker_index_item";
-import NavBar from '../../components/navbar/navbar' ;
+import NavBarContainer from '../navbar/navbar_container';
 
 class PickTaskerIndex extends React.Component {
   componentDidMount() {
@@ -15,7 +15,7 @@ class PickTaskerIndex extends React.Component {
 
     return (
       <div className="pick-tasker-form">
-        <NavBar />
+        <NavBarContainer />
         <div className="tasker-form-main-container">
           <div className="tasker-filter-container">
             <div className="trust-safety-container">
