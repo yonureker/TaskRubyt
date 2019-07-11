@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
   return {
     currentUser: state.entities.users[state.session.id],
     currentTask: state.currentTask,
-    errors: state.errors.task
+    errors: state.errors.task,
   }
 }
 

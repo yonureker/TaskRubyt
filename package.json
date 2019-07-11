@@ -3,7 +3,6 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
@@ -42,7 +41,9 @@
     "url": "https://github.com/yonureker/TaskRubyt/issues"
   },
   "homepage": "https://github.com/yonureker/TaskRubyt#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.0"
+  },
   "engines": {
     "node": "12.5.0",
     "npm": "6.9.0"

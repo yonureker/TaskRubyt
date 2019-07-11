@@ -24,7 +24,7 @@ Category.destroy_all
     is_tasker: Faker::Boolean.boolean,
     hourly_rate: Faker::Number.number(2),
     has_vehicle: Faker::Boolean.boolean,
-    tasker_description: 'hello'
+    tasker_description: 'I utilize my Toyota Sienna Van with no back seats to move all Couches, Mattress/Frames, Desks, Dressers, Mirrors, Rugs, and other Heavy and Odd Shaped Items. Van has Roof Rack and I have 2 Dollies, Tie-Down Ratchet Straps, Moving blankets, + Tools!'
   )
 end
 

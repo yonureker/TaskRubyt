@@ -26,16 +26,16 @@ export const removeTask = (id) => ({
   id
 })
 
+export const saveTask = (task) => ({
+  type: SAVE_TASK,
+  task
+})
+
 export const createTask = task => dispatch => (
   taskAPIUtil.createTask(task).then(task => (
     dispatch(receiveTask(task))
   ))
 );
-
-export const saveTask = (task) => ({
-  type: SAVE_TASK,
-  task
-})
 
 export const updateTask = task => dispatch => (
   taskAPIUtil.updateTask(task)

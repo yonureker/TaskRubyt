@@ -1,4 +1,4 @@
-import {SAVE_TASK} from '../actions/task_actions';
+import { SAVE_TASK, ADD_DATE } from '../actions/task_actions';
 import { saveState } from '../store/localStorage.js';
 
 const currentTaskReducer = (state = {}, action) => {

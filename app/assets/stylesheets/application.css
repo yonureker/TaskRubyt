@@ -78,7 +78,7 @@
   border: 1px solid #dce0e6;
   text-align: center;
 }
-.signup-form input[type="text"], input[type="number"], input[type="password"], input[type="date"]{
+.signup-form input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"]{
   outline: 0;
   background:white;
   width: 100%;
@@ -94,6 +94,15 @@
 }
 
 .signup-form p{
+  margin-top: 1px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  color: #438e29;
+  float:left;
+  font-size:12px;
+}
+
+.signup-form .errors{
   margin-top:1px;
   margin-left:5px;
   color: #438e29;
@@ -168,28 +177,6 @@
   display: block;
   clear: both;
 }
-/* .signup-form-container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.signup-form-container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.signup-form-container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
-}
-.signup-form-container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.signup-form-container .info span .fa {
-  color: #51af33;
-} */
 
 
 /* NavBar - navigation bar */
@@ -380,11 +367,11 @@
   height:100%; */
 }
 
-.scorecard-title{
+.scorecard-title {
   margin-bottom: 20px;
 }
 
-.scorecard-form{
+.scorecard-form {
   /* width:100%; */
 }
 
@@ -425,6 +412,138 @@
   display:flex;
   justify-content: center;
 }
+
+.suggestion-item, .suggestion-item--active {
+  outline: 0;
+  background:white;
+  width: 100%;
+  border: 0;
+  margin: 0 0 0px;
+  border-radius: 4px;
+  border:1px solid #dce0e6;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #86919D;
+  padding: 15px;
+}
+
+
+
+/* Pick Tasker Form */
+
+.tasker-form-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
+.tasker-filter-container {
+  width:30%;
+  margin: 0 auto;
+  padding: 20px;
+  height: 400px;
+}
+
+.tasker-list-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.single-tasker-container {
+  border:1px solid #dce0e6;
+  padding: 32px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tasker-scorecard-left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tasker-scorecard-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tasker-data-container {
+  height: 50%;
+}
+
+.tasker-description-container {
+  height: 50%;
+  line-height: 2em;
+}
+
+.taskerphoto {
+  width:100%;
+  border-radius: 100%;
+}
+
+.tasker-select-button{
+  color: white;
+  border: 1px solid #51af33;
+  background-color: #51af33;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tasker-chat-info {
+  text-align: center;
+  font-size: 11px;
+}
+
+.tasker-name-rate {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tasker-name {
+  font-size: 32px;
+}
+
+.tasker-rate {
+  font-size: 25px;
+}
+
+.tasker-description-title {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.trust-safety-container {
+  border:1px solid #dce0e6;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.trust-safety-icon {
+  padding: 15px;
+  margin: auto;
+}
+
+.trust-safety-text {
+  padding:15px;
+}
+
+.calendar-container {
+  border:1px solid #dce0e6;
+  padding: 15px;
+}
+
+.tasker-description-content {
+  margin-top: 10px;
+}
+
 
 
 

@@ -46,42 +46,42 @@ class SignupForm extends React.Component {
             <div className="signup-form-logo">
             <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" width="200" height="124" />
             </div>
-            <br/>
+            <br/><div>
             <label>Email Address</label>
               <input type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="signup-input"
               />
-              {this.handleErrors("Email")}
+              <div className="errors">{this.handleErrors("Email")}</div></div>
               <label>Password</label>
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="signup-input"
               />
-              {this.handleErrors("Password")}
+              <div className="errors">{this.handleErrors("Password")}</div>
               <label>First Name</label>
               <input type="text"
                 value={this.state.first_name}
                 onChange={this.update('first_name')}
                 className="signup-input"
               />
-              {this.handleErrors("First")}
+              <div className="errors">{this.handleErrors("First")}</div>
               <label>Last Name</label>
               <input type="text"
                 value={this.state.last_name}
                 onChange={this.update('last_name')}
                 className="signup-input"
               />
-              {this.handleErrors("Last")}
+              <div className="errors">{this.handleErrors("Last")}</div>
               <label>Zip Code</label>
               <input type="number"
                 value={this.state.zip_code}
                 onChange={this.update('zip_code')}
                 className="signup-input"
               />
-              {this.handleErrors("Zip")}
+              <div className="errors">{this.handleErrors("Zip")}</div>
             <input className="session-submit" type="submit" value="Create Account" />
           </div>
         </form>
