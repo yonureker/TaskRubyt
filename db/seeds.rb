@@ -14,19 +14,19 @@ User.destroy_all
 Task.destroy_all
 Category.destroy_all
 
-10.times do
-  User.create(
-    email: Faker::Internet.email,
-    password: 12_345_678,
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    zip_code: Faker::Address.zip_code,
-    is_tasker: Faker::Boolean.boolean,
-    hourly_rate: Faker::Number.number(2),
-    has_vehicle: Faker::Boolean.boolean,
-    tasker_description: 'I utilize my Toyota Sienna Van with no back seats to move all Couches, Mattress/Frames, Desks, Dressers, Mirrors, Rugs, and other Heavy and Odd Shaped Items. Van has Roof Rack and I have 2 Dollies, Tie-Down Ratchet Straps, Moving blankets, + Tools!'
-  )
-end
+# 10.times do
+#   User.create(
+#     email: Faker::Internet.email,
+#     password: 12_345_678,
+#     first_name: Faker::Name.first_name,
+#     last_name: Faker::Name.last_name,
+#     zip_code: Faker::Address.zip_code,
+#     is_tasker: Faker::Boolean.boolean,
+#     hourly_rate: Faker::Number.number(2),
+#     has_vehicle: Faker::Boolean.boolean,
+#     tasker_description: 'I utilize my Toyota Sienna Van with no back seats to move all Couches, Mattress/Frames, Desks, Dressers, Mirrors, Rugs, and other Heavy and Odd Shaped Items. Van has Roof Rack and I have 2 Dollies, Tie-Down Ratchet Straps, Moving blankets, + Tools!'
+#   )
+# end
 
 CATEGORIES = ['Mounting & Instalation',
               'Moving & Packing',
