@@ -14,6 +14,19 @@ User.destroy_all
 Task.destroy_all
 Category.destroy_all
 
+
+User.create(
+  email: 'yonureker@gmail.com',
+  password: '12345678',
+  first_name: 'Onur',
+  last_name: 'Eker',
+  zip_code: 94_007,
+  is_tasker: false,
+  hourly_rate: nil,
+  has_vehicle: true,
+  tasker_description: ''
+)
+
 User.create(
     email: 'test1@gmail.com',
     password: 12_345_678,
@@ -24,7 +37,7 @@ User.create(
     hourly_rate: 83,
     has_vehicle: true,
     tasker_description: 'I utilize my Toyota Sienna Van with no back seats to move all Couches, Mattress/Frames, Desks, Dressers, Mirrors, Rugs, and other Heavy and Odd Shaped Items. Van has Roof Rack and I have 2 Dollies, Tie-Down Ratchet Straps, Moving blankets, + Tools!'
-  )
+)
 
 User.create(
     email: 'test2@gmail.com',
@@ -108,13 +121,6 @@ end
 
 # DEMO USER
 
-User.create(
-  email: 'yonureker@gmail.com',
-  password: '12345678',
-  first_name: 'Onur',
-  last_name: 'Eker',
-  zip_code: 94_007
-)
 
 #DEMO TASKS
 
@@ -127,5 +133,5 @@ Task.create(
   task_date: '2019-07-19',
   task_start_time: '15:30',
   completed: false,
-  vehicle_required: true,
+  vehicle_required: true
 )
