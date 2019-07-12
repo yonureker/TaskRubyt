@@ -540,6 +540,8 @@
   background-color: #51af33;
   margin-top: 20px;
   margin-bottom: 20px;
+  float: center;
+  vertical-align: center;
 }
 
 .tasker-chat-info {
@@ -639,6 +641,17 @@
   border-radius: 100%;
   width: 100%
 }
+
+.task-confirm-snippet{
+  font-size: 11px;
+  font-style: italic;
+}
+
+.tasker-details-title2 {
+  font-size: 19px;
+}
+
+
 
 
 
