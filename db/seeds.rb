@@ -14,7 +14,6 @@ User.destroy_all
 Task.destroy_all
 Category.destroy_all
 
-
 User.create(
   email: 'yonureker@gmail.com',
   password: '12345678',
@@ -22,7 +21,7 @@ User.create(
   last_name: 'Eker',
   zip_code: 94_007,
   is_tasker: false,
-  hourly_rate: nil,
+  hourly_rate: '',
   has_vehicle: true,
   tasker_description: ''
 )
@@ -48,11 +47,11 @@ User.create(
     is_tasker: true,
     hourly_rate: 36,
     has_vehicle: true,
-    tasker_description: 'I\'ve mounted and hung many TVs, art works, and shelves of all sizes and weight safely and precisely where my clients wanted it. I make sure you will be completely satisfied with my work before I complete the job. '
+    tasker_description: 'I ve mounted and hung many TVs, art works, and shelves of all sizes and weight safely and precisely where my clients wanted it. I make sure you will be completely satisfied with my work before I complete the job. '
 )
 
 User.create(
-    email: 'test2@gmail.com',
+    email: 'test9@gmail.com',
     password: 12_345_678,
     first_name: "Bafetimbi",
     last_name: "Gomis",
@@ -118,8 +117,6 @@ CATEGORIES.each do |category|
     name: category.to_s
   )
 end
-
-# DEMO USER
 
 
 #DEMO TASKS
