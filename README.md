@@ -38,7 +38,7 @@ Click on the "Demo Log In" button [here](https://taskrubyt.herokuapp.com/#/login
 
 ## Adding Google Places API
 
-I have used the `[react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete` package to have autocomplete functionality on location.
+I have used the [react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete package to have autocomplete functionality on location.
 
 
 
