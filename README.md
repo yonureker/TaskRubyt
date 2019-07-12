@@ -1,24 +1,5 @@
-# README
+# TaskRubyt
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[TaskRubyt](https://taskrubyt.herokuapp.com/) is a [TaskRabbit](https://www.taskrabbit.com/) clone. TaskRubyt helps you to book a tasker for the task you select from various categories.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Why TaskRubyt? Because TaskRubyt utilizes Ruby On Rails on the backend.
