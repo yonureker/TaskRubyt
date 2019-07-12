@@ -22,7 +22,7 @@ class SplashHero extends React.Component {
           </div>
 
           <div className="splash-hero-cats">
-            <Link to={ { pathname: '/task-form', category_id:11} }><button value="11">Mounting & Installation</button></Link>
+            <Link to={ { pathname: '/task-form', category_id:21} }><button value="21">Mounting & Installation</button></Link>
             <button value="2">Moving & Packing</button>
             <button value="3">Furniture Assembly</button>
             <button value="4">Home Improvement</button>
