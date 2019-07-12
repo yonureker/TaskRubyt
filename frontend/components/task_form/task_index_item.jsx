@@ -15,7 +15,7 @@ class TaskIndexItem extends React.Component {
 handleSubmit(e) {
 
   const task = Object.assign({},this.props.currentTask,{tasker_id: this.props.location.state.tasker_id});
-  const {tasker_id, location, description} = task; //destructuring
+  const {tasker_id, location, description} = task;
   const newObj = {tasker_id, location, description };
   this.props.createTask(newObj).then(() => {
        this.props.history.push('/tasks');
@@ -26,6 +26,8 @@ handleSubmit(e) {
 
 render() {
   return (
+
+    
 
 
     <div className="taskitem task-details-container">
