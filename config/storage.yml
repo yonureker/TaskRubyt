@@ -6,19 +6,19 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
-amazon_dev:
-  service: S3
-  access_key_id: <%= Rails.application.credentials.aws[:AKIAX2GSWHWQZKVMLY53] %>
-  secret_access_key: <%= Rails.application.credentials.aws[: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] %>
-  region: <%= Rails.application.credentials.aws[:us-west-1] %>
-  bucket: <%= Rails.application.credentials.aws[:dev][:taskrubyt-dev] %>
+# amazon_dev:
+#   service: S3
+#   access_key_id: <%= Rails.application.credentials.aws[:AKIAX2GSWHWQZKVMLY53] %>
+#   secret_access_key: <%= Rails.application.credentials.aws[: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] %>
+#   region: <%= Rails.application.credentials.aws[:us-west-1] %>
+#   bucket: <%= Rails.application.credentials.aws[:dev][:taskrubyt-dev] %>
 
-amazon_prod:
-  service: S3
-  access_key_id: <%= Rails.application.credentials.aws[:AKIAX2GSWHWQZKVMLY53] %>
-  secret_access_key: <%= Rails.application.credentials.aws[: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] %>
-  region: <%= Rails.application.credentials.aws[:us-west-1] %>
-  bucket: <%= Rails.application.credentials.aws[:prod][:taskrubyt-pro] %>
+# amazon_prod:
+#   service: S3
+#   access_key_id: <%= Rails.application.credentials.aws[:AKIAX2GSWHWQZKVMLY53] %>
+#   secret_access_key: <%= Rails.application.credentials.aws[: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] %>
+#   region: <%= Rails.application.credentials.aws[:us-west-1] %>
+#   bucket: <%= Rails.application.credentials.aws[:prod][:taskrubyt-pro] %>
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
