@@ -6,7 +6,7 @@ Why TaskRubyt? Because TaskRubyt utilizes Ruby On Rails on the backend.
 
 [Live Demo](https://taskrubyt.herokuapp.com/#/)
 
-#Technologies
+# Technologies
 
 * Backend: Rails/ActiveRecord/PostgreSQL
 * Frontend: React/Redux
