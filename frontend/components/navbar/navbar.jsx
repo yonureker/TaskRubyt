@@ -5,7 +5,7 @@ const NavBar = ({ currentUser, logout }) => {
   const showLinks = () => (
     <nav className="navigation-bar">
       <div className="navigation-bar-left">
-        <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" height="64" width="100"/>
+      <img src="https://i.ibb.co/G9Q7mbk/diamond2.png" className="diamond" border="0" height="30" width="27" /><strong class="text">Task<span className="greeny">Rubyt</span></strong>
      </div>
 
      <div className="navigation-bar-right">
@@ -17,7 +17,7 @@ const NavBar = ({ currentUser, logout }) => {
   const welcomeUser = () => (
     <nav className="navigation-bar">
       <div className="navigation-bar-left">
-        <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" height="64" width="100"/>
+      <img src="https://i.ibb.co/G9Q7mbk/diamond2.png" className="diamond" border="0" height="30" width="27" /><strong class="text">Task<span className="greeny">Rubyt</span></strong>
      </div>
 
       <div className="navigation-bar-right">

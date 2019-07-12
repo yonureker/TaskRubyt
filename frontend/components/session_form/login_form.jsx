@@ -49,8 +49,8 @@ class LoginForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="signup-form-box">
           <div className="signup-form">
           <div className="signup-form-logo">
-            <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9151d6578f32165ee641db37cc2f3322/taskrabbit.jpg" width="200" height="124" />
-          </div>
+            <img src="https://i.ibb.co/G9Q7mbk/diamond2.png" className="diamond" border="0" height="30" width="27" /><strong class="text">Task<span className="greeny">Rubyt</span></strong>
+            </div>
               <br />
               <label>Email Address</label>
               <input type="text"

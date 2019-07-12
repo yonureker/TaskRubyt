@@ -51,6 +51,7 @@
    width: 100%;
    resize: none;
    border: 1px solid #dce0e6;
+   padding: 15px;
  }
 
 .signup-page{
@@ -78,6 +79,25 @@
   border: 1px solid #dce0e6;
   text-align: center;
 }
+
+.signup-form strong{
+  vertical-align: middle;
+}
+
+.signup-form-logo {
+  font-size: 25px;
+  vertical-align: middle;
+  align-content: center;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.signup-form .diamond{
+  margin-top: 0px;
+} 
+
 .signup-form input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"]{
   outline: 0;
   background:white;
@@ -185,19 +205,43 @@
   background: white;
   overflow: hidden;
   border-bottom: 1px solid #dce0e6;
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-bar-left{
   float:left;
   margin-left: 10%;
+  width: 50%;
+  /* vertical-align: middle; */
+  font-size: 25px;
+  display: flex;
   vertical-align: middle;
 }
 
+.navigation-bar-left strong{
+  vertical-align: middle;
+  margin-top: 18px;
+}
+
+.greeny{
+  color: green;
+  font-size: 25px;
+} 
+
+.diamond{
+  margin-top:18px;
+} 
+
+
+
+
 .navigation-bar-right{
   float:right;
-  margin-right: 20%;
+  /* margin-right: 20%; */
   vertical-align: middle;
+  width: 50%;
+  margin-left: 40%;
 }
 
 .navigation-bar a {
@@ -443,6 +487,8 @@
   margin: 0 auto;
   padding: 20px;
   height: 400px;
+  position: sticky;
+  top: 0;
 }
 
 .tasker-list-container {
@@ -456,6 +502,7 @@
   padding: 32px;
   display: flex;
   margin-bottom: 20px;
+  max-height: 300px;
 }
 
 .tasker-scorecard-left {
@@ -483,7 +530,7 @@
 }
 
 .taskerphoto {
-  width:100%;
+  height:60%;
   border-radius: 100%;
 }
 
@@ -505,6 +552,7 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  border-bottom: 1px solid #dce0e6;
 }
 
 .tasker-name {

@@ -28,7 +28,7 @@ render() {
   return (
 
 
-    <div className="taskitem">
+    <div className="taskitem task-details-container">
      <div className="field">
       Tasker
      <div className="userinput">{this.props.task.first_name} {this.props.task.last_name}</div>
@@ -40,10 +40,10 @@ render() {
      <div className="userinput">{this.props.task.contact}</div>
        </div>
 
-      <div className="field">
+      {/* <div className="field">
        Tasker Rate
       <div className="userinput">{this.props.tasker.hourly_rate}</div>
-        </div>
+        </div> */}
 
      <div className="field">
        Location
