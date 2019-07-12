@@ -5,7 +5,7 @@ const taskersReducer = (state = {}, action) => {
     Object.freeze(state);
     switch(action.type) {
         case RECEIVE_ALL_TASKERS:
-            return action.users;
+            return merge(action.users);
         case RECEIVE_TASKER:
             return merge( {}, state, { [user.id]: action.user});
         default: 
