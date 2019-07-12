@@ -12,7 +12,7 @@ const NavBar = ({ currentUser, logout }) => {
           height="30"
           width="27"
         />
-        <strong class="text">
+        <strong className="text">
           Task<span className="greeny">Rubyt</span>
         </strong>
       </div>
@@ -37,7 +37,7 @@ const NavBar = ({ currentUser, logout }) => {
           height="30"
           width="27"
         />
-        <strong class="text">
+        <strong className="text">
           Task<span className="greeny">Rubyt</span>
         </strong>
       </div>
