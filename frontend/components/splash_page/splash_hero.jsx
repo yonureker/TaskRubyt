@@ -23,11 +23,11 @@ class SplashHero extends React.Component {
 
           <div className="splash-hero-cats">
             <Link to={ { pathname: '/task-form', category_id:21} }><button value="21">Mounting & Installation</button></Link>
-            <button value="2">Moving & Packing</button>
-            <button value="3">Furniture Assembly</button>
-            <button value="4">Home Improvement</button>
-            <button value="5">General Handyman</button>
-            <button value="6">Heavy Lifting</button>
+            <Link to={ { pathname: '/task-form', category_id:22} }><button value="22">Moving & Packing</button></Link>
+            <Link to={ { pathname: '/task-form', category_id:23} }><button value="23">Furniture Assembly</button></Link>
+            <Link to={ { pathname: '/task-form', category_id:24} }><button value="24">Home Improvement</button></Link>
+            <Link to={ { pathname: '/task-form', category_id:25} }><button value="25">General Handyman</button></Link>
+            <Link to={ { pathname: '/task-form', category_id:26} }><button value="26">Heavy Lifting</button></Link>
           </div>
         </div>
       </div>

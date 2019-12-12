@@ -13,6 +13,7 @@ class TaskIndex extends React.Component {
       return (
         <TaskIndexItem
           key={task.id}
+          tasker={task.tasker_id}
           task={task}
           deleteTask={this.props.deleteTask} />
       );

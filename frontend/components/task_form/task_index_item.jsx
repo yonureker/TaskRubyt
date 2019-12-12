@@ -30,9 +30,9 @@ class TaskIndexItem extends React.Component {
               <strong>Tasker:</strong>
               </div>
               <br />
-              {this.props.task.first_name +
+              {this.props.tasker.first_name +
                 " " +
-                this.props.task.last_name[0]}
+                this.props.tasker.last_name[0]}
             </div>
 
             <div className="tasker-photo">
@@ -68,7 +68,7 @@ class TaskIndexItem extends React.Component {
           <div className="tasker-details-title2">
             <strong>Hourly Rate:</strong>
             </div>
-            <br /> ${this.props.task.hourly_rate}/hr
+            <br /> ${this.props.tasker.hourly_rate}/hr
             <br />
             <br />
             <div className="task-confirm-snippet">
