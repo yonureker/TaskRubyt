@@ -435,6 +435,10 @@
   margin-top:10px;
 }
 
+scorecard-form-time-date {
+  flex-direction: row;
+}
+
 .scorecard-form ul{
   list-style: none;
 }
@@ -650,6 +654,24 @@
 
 .tasker-details-title2 {
   font-size: 19px;
+}
+
+.footer {
+  margin-top: 80px;
+  background-color: white;
+  height: 100px;
+  color: darkgray;
+}
+
+.copyright {
+  border-top: 1px solid lightgray;
+  margin: auto 100px;
+  padding-left: 100px;
+}
+
+.copyright-text {
+  font-size: 15px;
+  margin-top: 20px;
 }
 
 

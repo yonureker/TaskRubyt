@@ -162,7 +162,8 @@ class TaskForm extends React.Component {
                 <div className="scorecard-title">
                   <span>TASK DATE & TIME</span>
                 </div>
-                <div className="scorecard-form">
+                <div className="scorecard-form-time-date">
+                  <div>
                   <input
                     type="date"
                     name="date"
@@ -174,6 +175,7 @@ class TaskForm extends React.Component {
                     name="time"
                     onChange={this.update("task_start_time")}
                   />
+                  </div>
 
                   <br />
                 </div>
