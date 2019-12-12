@@ -19,7 +19,6 @@ class TaskIndex extends React.Component {
     });
      return (
        <div className="fullTaskerPage">
-         <NavBarContainer />
            <div className="security">
               <img className="secimage" src={window.security}   />
              <div className="trust"> Trust & Safety Guarantee : </div>

@@ -51,7 +51,6 @@ class TaskForm extends React.Component {
   render() {
     return (
       <div className="task-form">
-        <NavBarContainer />
 
         <div className="task-details">
           <div className="task-scorecard-container">

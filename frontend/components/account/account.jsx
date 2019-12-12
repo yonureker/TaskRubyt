@@ -22,7 +22,6 @@ class Account extends React.Component {
 
     return(
     <div className="account-page">
-      <NavBarContainer />
       <div className="account-container">
         <div className="account-container-content">
           <div className="account-container-content-left">

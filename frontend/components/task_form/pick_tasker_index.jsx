@@ -14,7 +14,6 @@ class PickTaskerIndex extends React.Component {
 
     return (
       <div className="pick-tasker-form">
-        <NavBarContainer />
         <div className="tasker-form-main-container">
           <div className="tasker-filter-container">
             <div className="trust-safety-container">

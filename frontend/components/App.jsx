@@ -9,11 +9,13 @@ import ConfirmTaskContainer from './task_form/confirm_task_container';
 import TaskIndexContainer from './task_form/task_index_container';
 import SplashPage from './splash_page/splash_page.jsx';
 import Footer from './footer/footer';
+import NavBarContainer from './navbar/navbar_container'
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div className="page-content">
+    <NavBarContainer />
     <Switch>
       <Route exact path="/" component={SplashPage} />
       <AuthRoute exact path="/login" component={LoginFormContainer} />
