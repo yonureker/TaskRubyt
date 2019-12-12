@@ -17,7 +17,7 @@ class TaskForm extends React.Component {
       location: "",
       task_date: "",
       task_start_time: "",
-      vehicle_required: "",
+      vehicle_required: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -186,10 +186,9 @@ class TaskForm extends React.Component {
                   <span>TASK DESCRIPTION</span>
                   <br />
                   <span>
-                    Start the conversation and tell your Tasker what you
-                    need done. This helps us show you only qualified and
-                    available Taskers for the job. Don't worry, you can edit
-                    this later.
+                    Start the conversation and tell your Tasker what you need
+                    done. This helps us show you only qualified and available
+                    Taskers for the job. Don't worry, you can edit this later.
                   </span>
                 </div>
                 <div className="scorecard-form">
