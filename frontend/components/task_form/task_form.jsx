@@ -110,22 +110,6 @@ class TaskForm extends React.Component {
                     </div>
                   )}
                 </PlacesAutocomplete>
-
-                {/* <div className="scorecard-form">
-                <form className="location">
-                  <input
-                    type="text"
-                    value={this.state.location}
-                    onChange={this.update("location")}
-                    className=""
-                    placeholder="Location"
-                  />
-                  <br />
-                  <div className="continue">
-                  <button>Continue</button>
-                  </div>
-                </form>
-                </div> */}
               </div>
             </div>
             <div className="task-scorecard-vehicle scorecard">
@@ -168,9 +152,6 @@ class TaskForm extends React.Component {
                     </ul>
 
                     <br />
-                    <div className="continue">
-                      <button>Continue</button>
-                    </div>
                   </form>
                 </div>
               </div>
@@ -195,9 +176,6 @@ class TaskForm extends React.Component {
                   />
 
                   <br />
-                  <div className="continue">
-                    <button>Continue</button>
-                  </div>
                 </div>
               </div>
             </div>
