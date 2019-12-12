@@ -14,7 +14,6 @@ class SplashPage extends React.Component {
       <div className="splash-page">
         <NavBarContainer />
         <SplashHero />
-        <Footer />
       </div>
     )
   }

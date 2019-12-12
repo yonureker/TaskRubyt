@@ -8,6 +8,7 @@ import PickTaskerContainer from './task_form/pick_tasker_container';
 import ConfirmTaskContainer from './task_form/confirm_task_container';
 import TaskIndexContainer from './task_form/task_index_container';
 import SplashPage from './splash_page/splash_page.jsx';
+import Footer from './footer/footer';
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
@@ -23,6 +24,7 @@ const App = () => (
       <Route exact path='/confirm-task' component={ConfirmTaskContainer} />
       <Route exact path='/mytasks' component={TaskIndexContainer} />
     </Switch>
+    <Footer />
   </div>
 );
 
