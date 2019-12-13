@@ -10,7 +10,7 @@ class ConfirmTask extends React.Component {
   }
 
   handleSubmit(e) {
-    const taskToSubmit = merge({}, this.props.currentTask, {
+    const taskToSubmit = merge(this.props.currentTask, {
       tasker_id: this.props.location.state.tasker_id
     });
 
