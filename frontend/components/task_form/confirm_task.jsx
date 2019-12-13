@@ -47,7 +47,6 @@ class ConfirmTask extends React.Component {
     
     return (
       <div className="confirm-task-page">
-        <NavBarContainer />
         <div className="task-details-container">
           {/* <div className="name field">
             <div className="task-icon">
