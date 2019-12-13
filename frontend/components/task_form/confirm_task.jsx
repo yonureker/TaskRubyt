@@ -1,6 +1,5 @@
 import React from "react";
 import merge from "lodash/merge";
-import NavBarContainer from "../navbar/navbar_container";
 
 class ConfirmTask extends React.Component {
   constructor(props) {
@@ -10,7 +9,8 @@ class ConfirmTask extends React.Component {
   }
 
   handleSubmit(e) {
-    const taskToSubmit = merge(this.props.currentTask, {
+
+    const taskToSubmit = merge({}, this.props.currentTask, {
       tasker_id: this.props.location.state.tasker_id
     });
 
