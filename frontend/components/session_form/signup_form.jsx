@@ -44,7 +44,7 @@ class SignupForm extends React.Component {
           <br/>
           <div className="signup-form">
             <div className="signup-form-logo">
-            <img src="https://i.ibb.co/G9Q7mbk/diamond2.png" className="diamond" border="0" height="30" width="27" /><strong class="text">Task<span className="greeny">Rubyt</span></strong>
+            <img src="https://i.ibb.co/G9Q7mbk/diamond2.png" className="diamond" border="0" height="30" width="27" /><strong className="text">Task<span className="greeny">Rubyt</span></strong>
             </div>
             <br/>
             <label>Email Address</label>

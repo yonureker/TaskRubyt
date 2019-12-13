@@ -5,16 +5,16 @@ const NavBar = ({ currentUser, logout }) => {
   const showLinks = () => (
     <nav className="navigation-bar">
       <div className="navigation-bar-left">
+      <Link to="/">
         <img
-          src="https://i.ibb.co/G9Q7mbk/diamond2.png"
-          className="diamond"
+          src="https://i.ibb.co/Jtx4xZr/Screen-Shot-2019-12-13-at-12-16-03-PM.png"
           border="0"
-          height="30"
-          width="27"
-        />
-        <strong className="text">
+          height="100"
+          width="370"
+        /></Link>
+        {/* <strong className="text">
           Task<span className="greeny">Rubyt</span>
-        </strong>
+        </strong> */}
       </div>
 
       <div className="navigation-bar-right">
@@ -30,16 +30,13 @@ const NavBar = ({ currentUser, logout }) => {
   const welcomeUser = () => (
     <nav className="navigation-bar">
       <div className="navigation-bar-left">
+      <Link to="/">
         <img
-          src="https://i.ibb.co/G9Q7mbk/diamond2.png"
-          className="diamond"
+          src="https://i.ibb.co/Jtx4xZr/Screen-Shot-2019-12-13-at-12-16-03-PM.png"
           border="0"
-          height="30"
-          width="27"
-        />
-        <strong className="text">
-          Task<span className="greeny">Rubyt</span>
-        </strong>
+          height="100"
+          width="370"
+        /></Link>
       </div>
 
       <div className="navigation-bar-right">
