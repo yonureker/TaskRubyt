@@ -9,8 +9,8 @@ const NavBar = ({ currentUser, logout }) => {
         <img
           src="https://i.ibb.co/Jtx4xZr/Screen-Shot-2019-12-13-at-12-16-03-PM.png"
           border="0"
-          height="100"
-          width="370"
+          height="50"
+          width="185"
         /></Link>
         {/* <strong className="text">
           Task<span className="greeny">Rubyt</span>
@@ -34,8 +34,8 @@ const NavBar = ({ currentUser, logout }) => {
         <img
           src="https://i.ibb.co/Jtx4xZr/Screen-Shot-2019-12-13-at-12-16-03-PM.png"
           border="0"
-          height="100"
-          width="370"
+          height="50"
+          width="185"
         /></Link>
       </div>
 
@@ -46,6 +46,7 @@ const NavBar = ({ currentUser, logout }) => {
         <span>
           <Link to="/account">Account</Link>
         </span>
+        <span><Link to="/account">Welcome, {currentUser.first_name}</Link></span>
         {/* <Link to='/'>
       <button className="header-button" onClick={logout}>Log Out</button>
       </Link> */}

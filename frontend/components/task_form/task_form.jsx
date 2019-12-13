@@ -49,9 +49,10 @@ class TaskForm extends React.Component {
   }
 
   render() {
+    console.log(this.props)
+
     return (
       <div className="task-form">
-
         <div className="task-details">
           <div className="task-scorecard-container">
             <div className="task-scorecard-location scorecard">

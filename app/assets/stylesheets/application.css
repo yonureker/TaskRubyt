@@ -220,6 +220,11 @@
   vertical-align: middle;
 }
 
+.navigation-bar .navigation-bar-left a{
+  padding: 0;
+  margin-top: 8px;
+}
+
 .navigation-bar-left strong{
   vertical-align: middle;
   margin-top: 18px;
