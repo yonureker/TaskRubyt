@@ -20,14 +20,6 @@ class TaskIndex extends React.Component {
     });
      return (
        <div className="fullTaskerPage">
-           <div className="security">
-              <img className="secimage" src={window.security}   />
-             <div className="trust"> Trust & Safety Guarantee : </div>
-
-               <div className="vet">All Taskers are fully vetted & background checked.</div>
-
-           </div>
-
 
            <div className="tconfirm">Your created tasks</div>
        <ul className="taskindex">

@@ -46,10 +46,6 @@ const NavBar = ({ currentUser, logout }) => {
         <span>
           <Link to="/account">Account</Link>
         </span>
-        <span><Link to="/account">Welcome, {currentUser.first_name}</Link></span>
-        {/* <Link to='/'>
-      <button className="header-button" onClick={logout}>Log Out</button>
-      </Link> */}
       </div>
     </nav>
   );

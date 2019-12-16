@@ -20,11 +20,11 @@ const App = () => (
       <Route exact path="/" component={SplashPage} />
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
-      <ProtectedRoute exact path="/task-form" component={TaskFormContainer} />
-      <ProtectedRoute exact path="/pick-tasker" component={PickTaskerContainer} />
-      <ProtectedRoute exact path="/account" component={AccountContainer} />
-      <ProtectedRoute exact path='/confirm-task' component={ConfirmTaskContainer} />
-      <ProtectedRoute exact path='/mytasks' component={TaskIndexContainer} />
+      <AuthRoute exact path="/task-form" component={TaskFormContainer} render />
+      <AuthRoute exact path="/pick-tasker" component={PickTaskerContainer} />
+      <AuthRoute exact path="/account" component={AccountContainer} />
+      <AuthRoute exact path='/confirm-task' component={ConfirmTaskContainer} />
+      <AuthRoute exact path='/mytasks' component={TaskIndexContainer} />
     </Switch>
     <Footer />
   </div>

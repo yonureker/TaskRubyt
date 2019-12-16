@@ -110,17 +110,17 @@ class ConfirmTask extends React.Component {
 
           <div className="task-details-middle">
             <ul>
-              <li><strong>Date & Time:</strong> {this.props.currentTask.task_date} at {this.props.currentTask.task_start_time}</li>
-              <li><strong>Location:</strong> {this.props.currentTask.location}</li>
+              <li><strong>Date & Time:</strong> < br/>{this.props.currentTask.task_date} at {this.props.currentTask.task_start_time}</li>
+              <li><strong>Location:</strong> < br/> {this.props.currentTask.location}</li>
             </ul>
           </div>
 
           <div className="task-details-bottom">
-            <strong>Hourly Rate:</strong> ${this.props.location.state.hourly_rate}/hr
+            <strong>Hourly Rate:</strong> < br/> ${this.props.location.state.hourly_rate}/hr
             <br />
             A 15% Trust and Support fee is added to the Tasker’s total rate.
             < br/>
-            You will not be charged until your task is complete. Tasks have a one-hour minimum. You can cancel or reschedule anytime. If you cancel your task within 24 hours of the scheduled start time, you may be charged a one-hour cancellation fee at the Tasker's hourly rate.
+            <i>You will not be charged until your task is complete. Tasks have a one-hour minimum. You can cancel or reschedule anytime. If you cancel your task within 24 hours of the scheduled start time, you may be charged a one-hour cancellation fee at the Tasker's hourly rate.</i>
             <div className="taskbutton">
             <button
               className="tasker-select-button"

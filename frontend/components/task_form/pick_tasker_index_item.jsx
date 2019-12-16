@@ -26,7 +26,7 @@ const TaskerIndexItem = ({ tasker }) => {
     <div className="tasker-data-container">
     <div className="tasker-name-rate">
       <div className="tasker-name">
-        {/* <strong>{tasker.first_name} {tasker.last_name[0] + '.'}</strong> */}
+        <strong>{tasker.first_name} {tasker.last_name[0] + '.'}</strong>
       </div>
       <div className="tasker-rate">
       <strong> ${tasker.hourly_rate}/hr </strong>
