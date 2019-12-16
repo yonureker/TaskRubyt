@@ -8,6 +8,10 @@ class PickTaskerIndex extends React.Component {
   }
 
   render() {
+    console.log(this.props.taskers)
+    console.log(this.props.currentTask)
+
+
     const taskers = this.props.taskers.map(tasker => {
       return <TaskerIndexItem key={tasker.id} tasker={tasker} />;
     });
