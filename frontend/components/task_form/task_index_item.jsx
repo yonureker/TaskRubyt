@@ -19,47 +19,42 @@ class TaskIndexItem extends React.Component {
   }
 
   render() {
+    console.log(this.props.task);
+
     return (
       <div className="taskitem task-details-container">
         <div className="field">
-          Tasker
-          <div className="userinput">
-            {this.props.task.first_name} {this.props.task.last_name}
-          </div>
-        </div>
-        <img className="itemphoto" src={this.props.task.tasker_photo} />
-
-        <div className="field">
-          Tasker Contact
-          <div className="userinput">{this.props.task.contact}</div>
+          <strong>Tasker ID:</strong>
+          <div className="userinput">{this.props.task.tasker_id}</div>
         </div>
 
-        {/* <div className="field">
-       Tasker Rate
-      <div className="userinput">{this.props.tasker.hourly_rate}</div>
-        </div> */}
+        <div className="field">
+          <strong>Category ID:</strong>
+          <div className="userinput">{this.props.task.category_id}</div>
+        </div>
 
         <div className="field">
-          Location
+          <strong>Location:</strong>
           <div className="userinput">{this.props.task.location}</div>
         </div>
-
+        <br />
         <div className="field">
-          Duration
-          <div className="userinput">{this.props.task.task_duration}</div>
+          <strong>Date:</strong>
+          <div className="userinput">{this.props.task.task_date}</div>
         </div>
-
+        <br />
         <div className="field">
-          Description
+          <strong>Description:</strong>
           <div className="userinput">{this.props.task.description}</div>
         </div>
-
-        <div className="taskbutton">
+        <br />
+        <div className="continue">
           <button
-            className="taskcreatebutton"
+            className="cancel-button"
+            color="white"
             onClick={() => this.props.deleteTask(this.props.task.id)}
           >
-            Cancel
+            Cancel Task
           </button>
         </div>
       </div>

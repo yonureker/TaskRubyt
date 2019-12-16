@@ -15,7 +15,8 @@ const mapDispatchToProps = dispatch => {
   return {
   fetchAllTasks: () => dispatch(fetchAllTasks()),
   deleteTask: id => dispatch(deleteTask(id)),
-  fetchAllCategories: () => dispatch(fetchAllCategories())
+  fetchAllCategories: () => dispatch(fetchAllCategories()),
+  fetchAllUsers: () => dispatch(fetchAllUsers())
   };
 };
 

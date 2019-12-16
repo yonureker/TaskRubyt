@@ -35,6 +35,16 @@
   cursor: pointer;
  }
 
+ .cancel-button {
+  padding: 10px 22px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: #51af33;
+  color: 'white'
+ }
+
  header {
    display: flex;
    padding-bottom: 10px;
@@ -611,9 +621,10 @@ scorecard-form-time-date {
 .task-details-container {
   border:1px solid #dce0e6;
   max-width: 400px;
-  min-height: 500px;
+  /* min-height: 500px; */
   margin: 0 auto;
   padding: 15px;
+  margin-top: 10px;
 }
 
 .task-details-top {
